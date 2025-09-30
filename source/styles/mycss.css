@@ -1,0 +1,130 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+.nav-link{
+    color: black;
+}
+
+.navbar {
+    text-decoration: none;
+}
+
+.navtel{
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(118, 121, 120);
+}
+
+.navbar-brand img{
+    width: 40px;
+}
+
+.navbar-toggler{
+    background-color: rgb(118, 121, 120);
+}
+
+.nav-text{
+    display: flex;
+}
+
+
+.carousel-item {
+  transition: transform 1.5s ease; /* вместо 0.6s */
+}
+
+.img-komp img{
+    width: 70%;
+    padding: 1rem;
+}
+
+.orang{
+    color:#ffc107;
+}
+
+.card{
+    border: none;
+}
+
+.card:hover{
+    background-color: #ffc107;
+    color: white;
+}
+
+.preim img {
+    height: 5rem;
+    width: 5rem;
+}
+
+/* Изначально нижний блок спрятан */
+.overlay-bottom {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Верхний блок на месте */
+.overlay-top {
+  transition: all 0.4s ease;
+}
+
+/* При наведении: верхний блок поднимается вверх */
+.card:hover .overlay-top {
+  transform: translateY(-50%);
+}
+
+/* При наведении: нижний блок выезжает */
+.card:hover .overlay-bottom {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.carousel-img {
+  height: 400px; /* фиксированная высота */
+  object-fit: cover; /* изображение заполнит блок, сохраняя пропорции */
+}
+
+.img2 {
+    height: 600px; /* фиксированная высота */
+    object-fit: cover; /* изображение заполнит блок, сохраняя пропорции */
+}
+
+.sociallogo img{
+    width: 40px;
+}
+
+.img-myag{
+    width: 400px;
+}
+
+.info-box p{
+    text-indent: 30px;
+}
+
+.text-box p{
+    text-indent: 30px;
+}
+
+
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+footer{
+    background: linear-gradient(270deg, #1c1d6e 0%, #000000 100%);
+}
+
+
+
+
+
+
