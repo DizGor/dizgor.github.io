@@ -1,49 +1,49 @@
 :root {
-    --brand: #ffce00
+  --brand: #ffce00
 }
 
 body {
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
-    background: #ffffff
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;
+  background: #ffffff
 }
 
 h2 {
-    font-weight: 700;
-    color: #000;
+  font-weight: 700;
+  color: #000;
 }
 
 .hero {
-    background: linear-gradient(90deg, rgba(34, 34, 34, 0.9), rgba(34, 34, 34, 0.6)), url('');
-    background-size: cover;
-    color: #fff;
-    padding: 5rem 0;
+  background: linear-gradient(90deg, rgba(34, 34, 34, 0.9), rgba(34, 34, 34, 0.6)), url('');
+  background-size: cover;
+  color: #fff;
+  padding: 5rem 0;
 }
 
 .service-card {
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06)
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06)
 }
 
 .phone-btn {
-    background: var(--brand);
-    color: #000;
-    font-weight: 700
+  background: var(--brand);
+  color: #000;
+  font-weight: 700
 }
 
 .logo {
-    font-weight: 700;
-    color: var(--brand)
+  font-weight: 700;
+  color: var(--brand)
 }
 
 /* background iccons */
 
 .advantages {
-    position: relative;
-    background-color: #f7f7f7;
-    padding: 80px 150px;
-    /* оставляем отступ для фоновых иконок */
-    overflow: hidden;
-    z-index: 1;
+  position: relative;
+  background-color: #f7f7f7;
+  padding: 80px 150px;
+  /* оставляем отступ для фоновых иконок */
+  overflow: hidden;
+  z-index: 1;
 }
 
 /* фоновые иконки */
@@ -53,74 +53,80 @@ h2 {
 .seo::after,
 .advantages::before,
 .advantages::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 150px;
-    height: 100%;
-    background-image: url('/roof.png');
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: contain;
-    opacity: 0.1;
-    pointer-events: none;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  background-image: url('/roof.png');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
 }
+
 .portfolio::before,
 .seo::before,
 .advantages::before {
-    left: 0;
-    mask-image: linear-gradient(to right, black 0%, transparent 70%);
-    -webkit-mask-image: linear-gradient(to right, black 0%, transparent 70%);
+  left: 0;
+  mask-image: linear-gradient(to right, black 0%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, transparent 70%);
 }
+
 .portfolio::after,
 .seo::after,
 .advantages::after {
-    right: 0;
-    mask-image: linear-gradient(to left, black 0%, transparent 70%);
-    -webkit-mask-image: linear-gradient(to left, black 0%, transparent 70%);
+  right: 0;
+  mask-image: linear-gradient(to left, black 0%, transparent 70%);
+  -webkit-mask-image: linear-gradient(to left, black 0%, transparent 70%);
 }
 
 /* на мобильных экранах */
 @media (max-width: 768px) {
-    .advantages {
-        padding: 80px 20px;
-        /* меньше отступа */
-    }
+  .advantages {
+    padding: 80px 20px;
+    /* меньше отступа */
+  }
 
-    .advantages::before,
-    .advantages::after {
-        display: none;
-        /* скрываем иконки на мобильных */
-    }
+  .portfolio::after,
+  .portfolio::before,
+  .seo::before,
+  .seo::after,
+  .advantages::before,
+  .advantages::after {
+    display: none;
+    /* скрываем иконки на мобильных */
+  }
 }
 
 /* recovery */
 .recovery-program {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }
 
 .recovery-program .program-text p {
-    font-size: 1.1rem;
-    color: #333;
+  font-size: 1.1rem;
+  color: #333;
 }
 
 @media (max-width: 992px) {
-    .recovery-program .container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .recovery-program .container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .recovery-program .program-text {
-        text-align: center;
-    }
+  .recovery-program .program-text {
+    text-align: center;
+  }
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: 300px;
-    /* фиксированная высота всех фото */
-    overflow: hidden;
+  width: 100%;
+  height: 300px;
+  /* фиксированная высота всех фото */
+  overflow: hidden;
 }
 
 /* table */
@@ -128,14 +134,17 @@ h2 {
 table.table {
   background-color: #ffffff;
 }
+
 table.table th {
   text-align: center;
   font-weight: 600;
   font-size: 1rem;
 }
+
 table.table td {
   vertical-align: middle;
 }
+
 .table-responsive {
   border-radius: 10px;
   overflow: hidden;
@@ -148,14 +157,18 @@ table p {
 
 /* btn */
 .btn-warning {
-    font-weight: bold; /* жирный текст */
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  /* жирный текст */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-warning:hover {
-    background-color: #e0a800; /* чуть темнее оригинального warning */
-    color: #fff; /* текст белый при наведении */
-    transform: scale(1.05); /* лёгкое увеличение при наведении */
+  background-color: #e0a800;
+  /* чуть темнее оригинального warning */
+  color: #fff;
+  /* текст белый при наведении */
+  transform: scale(1.05);
+  /* лёгкое увеличение при наведении */
 }
 
 /* map */
@@ -184,7 +197,8 @@ table p {
 .contact-section-unique .contact-row {
   display: flex;
   gap: 0;
-  flex-wrap: wrap; /* чтобы на мобильных колонки переносились */
+  flex-wrap: wrap;
+  /* чтобы на мобильных колонки переносились */
 }
 
 .contact-section-unique .contact-col-left,
@@ -224,21 +238,25 @@ table p {
 
 /* Адаптив для мобильных */
 @media (max-width: 767px) {
+
   .contact-section-unique .contact-col-left,
   .contact-section-unique .contact-col-right {
-    flex: 0 0 100%; /* обе колонки на всю ширину */
+    flex: 0 0 100%;
+    /* обе колонки на всю ширину */
   }
 
   /* Контакты сверху, карта снизу */
   .contact-section-unique .contact-col-left {
     order: 1;
   }
+
   .contact-section-unique .contact-col-right {
     order: 2;
   }
 
   .contact-section-unique .map-responsive {
-    padding-bottom: 56.25%; /* сохраняем пропорцию 16:9 */
+    padding-bottom: 56.25%;
+    /* сохраняем пропорцию 16:9 */
   }
 }
 
@@ -266,7 +284,7 @@ table p {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   text-decoration: none;
 
@@ -278,12 +296,20 @@ table p {
 /* Эффект при наведении */
 .phone-float-btn:hover {
   transform: scale(1.2);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Ключевые кадры пульсации */
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
