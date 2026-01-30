@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JKROVLIA — Кровля в Днепре</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="source/style/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark header-bg sticky-top p-0">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center py-3" href="#">
+        <div class="logo-box me-2">
+          <div class="logo-icon-placeholder"></div>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <span class="brand-name">JKROVLIA</span>
+          <span class="brand-sub text-uppercase">Днепр • Качество</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom active" href="/">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="services.html">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#">База знаний</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <div class="phone-container text-center text-lg-end me-0 me-lg-3 mb-3 mb-lg-0">
+            <div class="phone-label">ДНЕПР</div>
+            <a href="tel:+380671234567" class="phone-number text-decoration-none">+38 (067) 123–45–67</a>
+          </div>
+          <a href="#" class="btn btn-green-cta text-uppercase fw-bold">Заказать замер</a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 py-5">
+          <h1 class="hero-title text-uppercase">
+            Надёжная <br> защита <br>
+            <span class="text-green">вашего дома</span>
+          </h1>
+          <p class="hero-subtitle">
+            Профессиональный ремонт мягкой и скатной кровли любой сложности.
+            Гарантируем сухость и комфорт на 15 лет по официальному договору.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="services.html" class="btn btn-green-cta py-3 px-5">Наши услуги</a>
+            <a href="#calc" class="btn btn-outline-white py-3 px-5">Узнать стоимость</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="hero-image-container">
+            <img src="source/images/house_hero.png" alt="Дом" class="hero-house-img">
+          </div>
+        </div>
+        <div class="hero-stats-container">
+          <hr class="stats-divider">
+          <div class="row text-white ">
+            <div class="col-6 col-md-4 col-sm-4 mb-3 mb-md-0 text-center">
+              <div class="stat-number">20 лет</div>
+              <div class="stat-text text-uppercase">опыта</div>
+            </div>
+            <div class="col-6 col-md-4 col-sm-4 mb-3 mb-md-0 text-center">
+              <div class="stat-number">15 лет</div>
+              <div class="stat-text text-uppercase">гарантия</div>
+            </div>
+            <div class="col-6 col-md-4 col-sm-4 text-center">
+              <div class="stat-number">100%</div>
+              <div class="stat-text text-uppercase">договор</div>
+            </div>
+            <!-- <div class="col-6 col-md-3">
+                <div class="stat-number">0 грн</div>
+                <div class="stat-text text-uppercase">замер</div>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="services-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fw-black">Основные направления</h2>
+        <p class="section-subtitle text-muted mx-auto">
+          Мы специализируемся на кровельных системах для любых типов зданий в Днепре и области.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon-box mb-4">
+              <i class="bi bi-house-door text-white"></i>
+            </div>
+            <h3 class="service-name">Жесткая кровля</h3>
+            <p class="service-description">Монтаж металлочерепицы, профнастила, битумной черепицы. Полная комплектация:
+              водостоки, подшива.</p>
+            <div class="service-footer mt-auto pt-4">
+              <div class="service-price mb-3">От 250 грн/м²</div>
+              <a href="#" class="btn btn-outline-dark w-100 rounded-pill fw-bold py-2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="service-card h-100 active position-relative">
+            <span class="badge-top-choice">ТОП ВЫБОР</span>
+            <div class="service-icon-box mb-4 active-icon">
+              <i class="bi bi-layers-half text-dark"></i>
+            </div>
+            <h3 class="service-name text-white">Мягкая кровля</h3>
+            <p class="service-description">Профессиональная наплавляемая кровля из еврорубероида. Капитальный ремонт
+              крыш ОСББ, складов и гаражей.</p>
+            <div class="service-footer mt-auto pt-4">
+              <div class="service-price text-green mb-3">От 140 грн/м²</div>
+              <a href="#" class="btn btn-green-cta w-100 rounded-pill fw-bold py-2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon-box mb-4">
+              <i class="bi bi-tools text-white"></i>
+            </div>
+            <h3 class="service-name">Ремонт крыш</h3>
+            <p class="service-description">Специализированная бригада для устранения течей любой сложности. Гарантийное
+              обслуживание и латочный ремонт.</p>
+            <div class="service-footer mt-auto pt-4">
+              <div class="service-price mb-3">От 130 грн/м²</div>
+              <a href="#" class="btn btn-outline-dark w-100 rounded-pill fw-bold py-2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <a href="services.html" class="all-services-link">
+            Смотреть все услуги
+            <i class="bi bi-arrow-right-short"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Как мы  -->
+
+  <section class="process-section py-5">
+    <div class="container py-lg-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="process-title mb-4">
+            Как мы создаем <br>
+            <span class="text-green italic-text">безупречную кровлю</span>
+          </h2>
+
+          <div class="process-steps mt-5">
+            <div class="step-item d-flex mb-5">
+              <div class="step-number me-4">1</div>
+              <div class="step-content">
+                <h4 class="step-title">Бесплатная экспертиза</h4>
+                <p class="step-text">Приезжаем на объект, делаем замеры и диагностику течей с помощью тепловизора.</p>
+              </div>
+            </div>
+
+            <div class="step-item d-flex mb-5">
+              <div class="step-number me-4">2</div>
+              <div class="step-content">
+                <h4 class="step-title">Подбор материалов</h4>
+                <p class="step-text">Предлагаем варианты под ваш бюджет, используя проверенные бренды с высоким сроком
+                  службы.</p>
+              </div>
+            </div>
+
+            <div class="step-item d-flex">
+              <div class="step-number me-4">3</div>
+              <div class="step-content">
+                <h4 class="step-title">Монтаж по технологии</h4>
+                <p class="step-text">Никаких "быстрых" решений. Соблюдаем температурные режимы и стандарты укладки.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="before-after-wrapper shadow-lg">
+            <div class="img-container after">
+              <img src="source/images/slider/after.jpg" alt="После">
+              <div class="label after">ПОСЛЕ</div>
+            </div>
+
+            <div class="img-container before" id="beforeImg">
+              <img src="source/images/slider/before.jpg" alt="До">
+              <div class="label before">ДО</div>
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="slider-control" id="beforeAfterSlider">
+
+            <div class="slider-line" id="sliderLine">
+              <div class="slider-button">
+                <i class="fas fa-arrows-alt-h"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-center mt-3 text-white-50 small">Двигайте ползунок, чтобы увидеть результат</p>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- Calculator -->
+  <section class="calculator-section py-5" id="calc">
+    <div class="container">
+      <div class="calc-wrapper p-4 p-lg-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <h2 class="section-title text-white mb-4">Мгновенный расчет <br> стоимости</h2>
+
+            <form class="mt-5">
+              <div class="mb-4">
+                <label class="form-label text-uppercase small fw-bold text-muted mb-3">Тип кровельных работ</label>
+                <select class="form-select custom-select" id="roofType">
+                  <option value="100" selected>Мягкая кровля (Еврорубероид) в один слой</option>
+                  <option value="150">Мягкая кровля (Еврорубероид) в два слоя</option>
+                  <option value="300">Шиферная кровля</option>
+                  <option value="250">Профлист</option>
+                  <option value="600">Битумная черепица</option>
+                </select>
+              </div>
+
+              <div class="mb-5 mt-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <label class="form-label text-uppercase small fw-bold text-muted">Площадь крыши</label>
+                  <div class="area-value">
+                    <span id="areaDisplay" class="text-green fw-bold h3">100</span>
+                    <span class="text-white ms-2">м²</span>
+                  </div>
+                </div>
+                <input type="range" class="form-range custom-range" id="areaRange" min="10" max="1000" step="5"
+                  value="100">>
+              </div>
+
+              <div class="result-box pt-4 border-top border-secondary d-flex justify-content-between align-items-end">
+                <div class="calc-info-text">
+                  <p class="calc-disclaimer">
+                    * Данный расчет является приблизительным. <br>
+                    Стоимость может меняться в зависимости от сложности <br>
+                    конструкции и фактического объема работ.
+                  </p>
+                </div>
+
+                <div class="text-end">
+                  <p class="calc-label text-uppercase small fw-bold mb-2">Приблизительно:</p>
+                  <div class="total-price text-white fw-black">
+                    <span id="totalDisplay">10000</span> <small>грн</small>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 position-relative d-flex flex-column">
+            <div class="special-offer-card">
+              <span class="offer-badge">Спецпредложение</span>
+              <h5 class="offer-title">При заказе от 200 м² — замер и проект в подарок!</h5>
+              <a href="#" class="btn btn-light btn-offer">Успеть заказать</a>
+            </div>
+
+            <div class="calc-image-wrapper">
+              <img src="source/images/calc.jpg" alt="Расчет кровли" class="calc-main-img">
+              <div class="img-overlay-gradient"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="info-section py-5 dark-bg">
+    <div class="container py-lg-5">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-black text-white">Ремонт крыш в Днепре: от мелких протечек до капремонта</h2>
+            <div class="header-line mx-auto mt-3"></div>
+          </div>
+
+          <div class="row g-4 align-items-center mb-5">
+            <div class="col-lg-6">
+              <div class="advantage-card dark-card">
+                <div class="adv-icon"><i class="fas fa-history"></i></div>
+                <h4 class="text-white fw-bold mb-3">Опыт кровельных работ с 2004 года</h4>
+                <p class="text-white-50 small">
+                  Нужен надежный <strong class="text-green">ремонт кровли</strong>? Команда
+                  <strong>JKROVLIA</strong>
+                  приводит в порядок крыши по всей Днепропетровской области. Мы специализируемся на восстановлении
+                  герметичности жилых многоэтажек, частных домов и промышленных зданий. За 20 лет практики мы
+                  устранили
+                  тысячи протечек, гарантируя долговечность и строгое соблюдение строительных норм.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 px-lg-5">
+              <h5 class="text-green fw-bold mb-3"><i class="fas fa-map-marker-alt me-2"></i>Работаем во всех районах
+              </h5>
+              <p class="text-white mb-0 opacity-75">
+                Мы оперативно выезжаем в центр, спальные районы (Победа, Тополь, Парус) и промзоны Днепра. Для нас
+                не
+                важно, где расположен ваш объект — мы восстановим <strong class="text-green">кровлю ангаров, цехов и
+                  складов</strong> одинаково быстро. Бесплатный выезд мастера для замера и оценки состояния покрытия
+                в
+                черте города.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4 align-items-center mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <div class="advantage-card dark-card border-green-right">
+                <div class="adv-icon text-end"><i class="fas fa-layer-group"></i></div>
+                <h4 class="text-white fw-bold mb-3 text-lg-end">Любые кровельные материалы</h4>
+                <p class="text-white-50 small text-lg-end">
+                  Выполняем качественный монтаж <strong class="text-green">профнастила</strong>, оперативную замену
+                  листов поврежденного <strong class="text-green">шифера</strong> или профессиональное наплавление
+                  современного <strong class="text-green">рубероида</strong> (еврорубероида). Используем только
+                  проверенные материалы, устойчивые к жестким погодным условиям нашего региона.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 px-lg-5">
+              <h5 class="text-green fw-bold mb-3"><i class="fas fa-shield-alt me-2"></i>Смета под ваш бюджет</h5>
+              <p class="text-white mb-0 opacity-75">
+                За 20 лет мы изучили особенности всех типов крыш: от панельных домов до огромных заводских площадей.
+                Подберем оптимальный вариант ремонта, исходя из ваших финансовых возможностей и фактического
+                состояния
+                старого покрытия. Мы предлагаем решения, которые реально работают и экономят ваши деньги.
+              </p>
+            </div>
+          </div>
+
+          <div class="info-note p-4 dark-note shadow-lg">
+            <div class="row align-items-center">
+              <div class="col-md-auto text-center mb-3 mb-md-0">
+                <div class="note-badge-wrap">
+                  <span class="note-badge">На заметку</span>
+                </div>
+              </div>
+              <div class="col-md">
+                <p class="mb-0 text-white fs-5 lh-base">
+                  <strong>Не ждите осени!</strong> Своевременное устранение мелких трещин в
+                  <strong class="text-green">рубероиде</strong> или замена пары листов
+                  <strong class="text-green">профлиста</strong> сегодня сэкономит вам бюджет в будущем!
+                </p>
+              </div>
+              <div class="col-md-auto mt-3 mt-lg-0">
+                <a href="#contacts" class="btn-note-action">Получить расчет <i
+                    class="fas fa-chevron-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- rewiews -->
+  <section class="reviews-section py-5 bg-white border-top border-bottom">
+    <div class="container py-lg-5 position-relative">
+
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-black text-dark">ОТЗЫВЫ <span class="text-green text-uppercase">клиентов</span></h2>
+        <div class="header-line mx-auto mt-3"></div>
+      </div>
+
+      <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner pb-5">
+
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="review-carousel-card text-center px-4">
+                  <div class="review-avatar-container mb-4">
+                    <img src="source/images/reviews/user1.png" alt="Александр" class="review-avatar shadow">
+                  </div>
+                  <p class="review-text-large mb-4">
+                    «Заказывали капитальный ремонт крыши ОСББ на ж/м Тополь. Ребята сделали всё за 4 дня,
+                    использовали
+                    качественный еврорубероид. Прошел год, ливней было много — в подъездах сухо. Рекомендую!»
+                  </p>
+                  <div class="author-box">
+                    <h5 class="fw-bold text-dark mb-1">Александр В.</h5>
+                    <span class="text-green small fw-black text-uppercase">Председатель ОСББ, ул. Паникахи</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="review-carousel-card text-center px-4">
+                  <div class="review-avatar-container mb-4">
+                    <img src="source/images/reviews/user2.png" alt="Виталий" class="review-avatar shadow">
+                  </div>
+                  <p class="review-text-large mb-4">
+                    «Нужно было быстро перекрыть склад профнастилом. JKROVLIA откликнулись сразу. Цена адекватная,
+                    смета
+                    прозрачная. Отдельное спасибо за чистую площадку после работ.»
+                  </p>
+                  <div class="author-box">
+                    <h5 class="fw-bold text-dark mb-1">Виталий Петрович</h5>
+                    <span class="text-green small fw-black text-uppercase">Владелец логистического центра</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="review-carousel-card text-center px-4">
+                  <div class="review-avatar-container mb-4">
+                    <img src="source/images/reviews/user3.png" alt="Семья" class="review-avatar shadow">
+                  </div>
+                  <p class="review-text-large mb-4">
+                    «Меняли старый шифер на металлочерепицу в Диевке. Очень переживали за стропила, но мастера всё
+                    укрепили. Работают по договору, всё официально. Теперь крыша — украшение дома!»
+                  </p>
+                  <div class="author-box">
+                    <h5 class="fw-bold text-dark mb-1">Семья Денисовых</h5>
+                    <span class="text-green small fw-black text-uppercase">Частный сектор, Днепр</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="review-carousel-card text-center px-4">
+                  <div class="review-avatar-container mb-4">
+                    <img src="source/images/reviews/User4.png" alt="Сергей" class="review-avatar shadow">
+                  </div>
+                  <p class="review-text-large mb-4">
+                    «Искал, кто залатает крышу гаража в ГК "Сокол". Сделали быстро, мастер сам посоветовал материал,
+                    чтобы не переплачивать. Зиму отстоял без единого пятнышка на потолке.»
+                  </p>
+                  <div class="author-box">
+                    <h5 class="fw-bold text-dark mb-1">Сергей</h5>
+                    <span class="text-green small fw-black text-uppercase">Владелец гаража</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="review-carousel-card text-center px-4">
+                  <div class="review-avatar-container mb-4">
+                    <img src="source/images/reviews/user5.jpg" alt="Николай" class="review-avatar shadow">
+                  </div>
+                  <p class="review-text-large mb-4">
+                    «Выполняли ремонт мягкой кровли цеха на Левом берегу. Площадь большая, сроки поджимали. Бригада
+                    работала слаженно, оборудование современное. Акты закрыли вовремя.»
+                  </p>
+                  <div class="author-box">
+                    <h5 class="fw-bold text-dark mb-1">Николай Юрьевич</h5>
+                    <span class="text-green small fw-black text-uppercase">Главный инженер предприятия</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev custom-nav-btn" type="button" data-bs-target="#reviewsCarousel"
+          data-bs-slide="prev">
+          <span class="nav-circle"><i class="fas fa-arrow-left"></i></span>
+        </button>
+        <button class="carousel-control-next custom-nav-btn" type="button" data-bs-target="#reviewsCarousel"
+          data-bs-slide="next">
+          <span class="nav-circle"><i class="fas fa-arrow-right"></i></span>
+        </button>
+
+        <div class="carousel-indicators custom-dots">
+          <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="4"></button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Contacts -->
+  <section class="contact-section py-5" id="contacts">
+    <div class="container py-lg-5">
+      <div class="contact-wrapper shadow-lg">
+        <div class="row g-0">
+
+          <div class="col-lg-7 bg-white p-4 p-md-5">
+            <div class="contact-header mb-4">
+              <h2 class="fw-black text-dark mb-2" style="font-size: 2rem; letter-spacing: -1px;">
+                Нужен расчет <span class="text-green">ремонта?</span>
+              </h2>
+              <p class="text-muted small">
+                Заполните форму, и наш мастер свяжется с вами для <span class="text-dark fw-bold">бесплатной
+                  оценки</span> объекта в Днепре.
+              </p>
+            </div>
+
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-muted">Ваше имя</label>
+                  <input type="text" class="form-control custom-input" placeholder="Иван" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-muted">Телефон</label>
+                  <input type="tel" class="form-control custom-input" placeholder="+38 (0XX) XXX-XX-XX" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-muted">Адрес или тип объекта</label>
+                  <input type="text" class="form-control custom-input" placeholder="Днепр, ул. Космическая / Гараж">
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-muted">Описание проблемы</label>
+                  <textarea class="form-control custom-input" rows="3"
+                    placeholder="Что именно нужно сделать?"></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-green-action w-100 py-3">
+                    <i class="fas fa-calculator me-2"></i> Получить консультацию
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 dark-bg-contacts p-4 p-md-5 text-white d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="mb-4 fw-black">Наши контакты</h3>
+              <div class="contact-info-list">
+                <div class="d-flex mb-4">
+                  <div class="contact-icon-circle me-3">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <p class="mb-0 small opacity-50">Телефоны:</p>
+                    <p class="fw-bold mb-0">+38 (067) 123-45-67 <span class="badge bg-green-soft ms-2">Киевстар</span>
+                    </p>
+                    <p class="fw-bold mb-0">+38 (050) 123-45-67 <span class="badge bg-green-soft ms-2">Vodafone</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex mb-4">
+                  <div class="contact-icon-circle me-3">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div>
+                    <p class="mb-0 small opacity-50">Режим работы:</p>
+                    <p class="fw-bold mb-0">Пн-Сб: 08:00 — 19:00</p>
+                    <p class="small text-green mb-0">Вс: Выезд по договоренности</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="map-container shadow-sm">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169145.4248566164!2d34.860273752535084!3d48.46194482088636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303d2846103%3A0x684983054044a3ba!2z0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1715851234567!5m2!1sru!2sua"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="slider.js"></script>
+  <script src="calculator.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="contacts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
