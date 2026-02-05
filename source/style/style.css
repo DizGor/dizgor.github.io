@@ -1,17 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-green: #1abf7b;
-    --header-dark: #1b2436; /* Цвет с твоего скриншота */
+    --header-dark: #1b2436;
+    /* Цвет с твоего скриншота */
     --text-gray: #9da3a9;
 }
 
 /* Основной фон с фиксацией */
 .header-bg {
-    background-color: rgba(18, 24, 31, 0.95) !important; /* Сделали чуть прозрачным */
-    backdrop-filter: blur(10px); /* Эффект стекла при скролле */
+    background-color: rgba(18, 24, 31, 0.95) !important;
+    /* Сделали чуть прозрачным */
+    backdrop-filter: blur(10px);
+    /* Эффект стекла при скролле */
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Тонкая линия снизу */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Тень, чтобы отделить от контента */
-    z-index: 1030; /* Убеждаемся, что шапка выше всех элементов */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    /* Тонкая линия снизу */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Тень, чтобы отделить от контента */
+    z-index: 1030;
+    /* Убеждаемся, что шапка выше всех элементов */
 }
 
 /* Логотип */
@@ -38,7 +48,8 @@
     height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-bottom: 14px solid #12181f; /* Цвет фона логотипа */
+    border-bottom: 14px solid #12181f;
+    /* Цвет фона логотипа */
 }
 
 .brand-name {
@@ -57,7 +68,8 @@
 
 /* Навигация */
 .nav-link-custom {
-    color: rgba(255, 255, 255, 0.7) !important; /* Сделал чуть ярче для читабельности */
+    color: rgba(255, 255, 255, 0.7) !important;
+    /* Сделал чуть ярче для читабельности */
     font-weight: 600;
     font-size: 15px !important;
     margin: 0 15px;
@@ -82,7 +94,8 @@
     width: 100%;
     height: 2px;
     background-color: var(--main-green);
-    box-shadow: 0 0 10px var(--main-green); /* Небольшое свечение активной линии */
+    box-shadow: 0 0 10px var(--main-green);
+    /* Небольшое свечение активной линии */
 }
 
 /* Телефон */
@@ -105,8 +118,9 @@
     background-color: var(--main-green) !important;
     color: #12181f !important;
     font-size: 14px !important;
-    padding: 10px 25px !important; /* Оптимизировал размер для шапки */
-    border-radius: 12px !important; 
+    padding: 10px 25px !important;
+    /* Оптимизировал размер для шапки */
+    border-radius: 12px !important;
     border: 2px solid var(--main-green) !important;
     white-space: nowrap;
     transition: 0.3s;
@@ -124,20 +138,31 @@
 
 /* Адаптив */
 @media (max-width: 991px) {
-    .navbar-collapse { 
-        padding: 25px 0; 
-        background-color: #12181f; /* Плотный фон для мобильного меню */
+    .navbar-collapse {
+        padding: 25px 0;
+        background-color: #12181f;
+        /* Плотный фон для мобильного меню */
     }
-    .nav-link-custom { margin: 10px 0; text-align: center; }
-    .nav-link-custom.active::after { left: 25%; width: 50%; }
+
+    .nav-link-custom {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-link-custom.active::after {
+        left: 25%;
+        width: 50%;
+    }
 }
 
 /* --- Hero Блок --- */
 .hero-section {
     position: relative;
     overflow: hidden;
-    padding: 100px 0; /* Увеличил отступы для солидности */
-    background-color: #1b2436; /* Цвет заглушки, пока грузится фото */
+    padding: 100px 0;
+    /* Увеличил отступы для солидности */
+    background-color: #1b2436;
+    /* Цвет заглушки, пока грузится фото */
     color: white;
 }
 
@@ -148,22 +173,22 @@
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     /* ИСПРАВЛЕНО: Прямые слэши / вместо обратных \ */
-    background-image: 
-        linear-gradient(rgba(27, 36, 54, 0.7), rgba(27, 36, 54, 0.7)), 
-        url('../images/photo_2026-01-24_19-22-13.jpg'); 
-    
+    background-image:
+        linear-gradient(rgba(27, 36, 54, 0.7), rgba(27, 36, 54, 0.7)),
+        url('../images/photo_2026-01-24_19-22-13.jpg');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     /* Размытие */
-    filter: blur(8px); 
-    
+    filter: blur(8px);
+
     /* Масштаб, чтобы скрыть белые края размытия */
-    transform: scale(1.1); 
-    
+    transform: scale(1.1);
+
     z-index: 0;
 }
 
@@ -172,6 +197,7 @@
     position: relative;
     z-index: 2;
 }
+
 .hero-title {
     font-size: 72px;
     font-weight: 900;
@@ -221,11 +247,13 @@
 .hero-image-container {
     display: flex;
     justify-content: flex-end;
-    transform: translateY(-20px); /* Отрицательное значение — вверх, положительное — вниз */
+    transform: translateY(-20px);
+    /* Отрицательное значение — вверх, положительное — вниз */
 }
 
 .hero-house-img {
-    max-width: 180%; /* Позволяет дому быть крупнее колонки */
+    max-width: 180%;
+    /* Позволяет дому быть крупнее колонки */
     height: auto;
     object-fit: contain;
 }
@@ -251,16 +279,30 @@
 
 /* Адаптив */
 @media (max-width: 991px) {
-    .hero-stats-container{display: none;}
-    .hero-title { font-size: 42px; }
-    .hero-section { text-align: center; }
-    .hero-subtitle { margin: 0 auto; }
-    .d-flex.flex-wrap { justify-content: center; }
+    .hero-stats-container {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto;
+    }
+
+    .d-flex.flex-wrap {
+        justify-content: center;
+    }
 }
 
 
 
-/* --- Service Block --- */
+/* --- СЕКЦИЯ УСЛУГ (SERVICES) --- */
 
 .section-title {
     font-size: 42px;
@@ -274,31 +316,33 @@
     margin: 10px auto 0;
 }
 
+/* Общие стили карточки */
 .service-card {
-    background: #f8fafd; 
-    border-radius: 40px; 
+    background: #f8fafd;
+    border-radius: 40px;
     padding: 40px;
-    /* Прозрачный контур по умолчанию, чтобы при наведении карточка не "прыгала" */
-    border: 2px solid transparent; 
+    border: 2px solid transparent;
     transition: all 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
+    position: relative;
+    /* Для позиционирования бейджа */
 }
 
-/* Цвет центральной карточки как у Nav-bar */
+/* Центральная активная карточка */
 .service-card.active {
-    background: #1b2436; /* Твой цвет header-bg */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    background: #1b2436;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Эффект при наведении: появление зеленого контура */
+/* Эффект при наведении на любую карточку */
 .service-card:hover {
     transform: translateY(-10px);
-    border-color: var(--main-green); /* Используем твой зеленый */
-    box-shadow: 0 15px 30px rgba(26, 191, 123, 0.1); /* Легкое зеленое свечение */
+    border-color: var(--main-green);
+    box-shadow: 0 15px 30px rgba(26, 191, 123, 0.1);
 }
 
-/* Зеленая плашка ТОП ВЫБОР */
+/* БЕЙДЖ ТОП ВЫБОР */
 .badge-top-choice {
     position: absolute;
     top: 25px;
@@ -312,7 +356,7 @@
     text-transform: uppercase;
 }
 
-/* Иконки */
+/* ИКОНКИ */
 .service-icon-box {
     width: 60px;
     height: 60px;
@@ -322,12 +366,32 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    transition: all 0.3s ease;
 }
 
 .active-icon {
     background: var(--main-green) !important;
 }
 
+/* Анимация иконок (Светлые карточки) */
+.service-card:not(.active):hover .service-icon-box {
+    background: var(--main-green);
+}
+
+.service-card:not(.active):hover .service-icon-box i {
+    color: #1b2436;
+}
+
+/* Анимация иконок (Активная карточка) */
+.service-card.active:hover .service-icon-box {
+    background: #ffffff;
+}
+
+.service-card.active:hover .service-icon-box i {
+    color: var(--main-green);
+}
+
+/* ТЕКСТ И ОПИСАНИЕ */
 .service-name {
     font-size: 24px;
     font-weight: 800;
@@ -344,22 +408,46 @@
     color: #9da3a9;
 }
 
-/* Футер и Кнопки */
+/* ФУТЕР И ЦЕНА */
 .service-footer {
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .active .service-footer {
-    border-top: 1px solid rgba(255,255,255,0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+/* РАДИКАЛЬНЫЙ ФИКС: Убираем любую подсветку цены */
 .service-price {
     font-weight: 700;
-    color: var(--main-green);
+    color: var(--main-green) !important;
+    /* Фиксируем цвет */
     font-size: 18px;
+
+    /* Сбрасываем абсолютно всё */
+    text-decoration: none !important;
+    background: none !important;
+    background-color: transparent !important;
+
+    /* Убираем тени, свечения и фильтры */
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+
+    /* Убираем рамки и обводки */
+    border: none !important;
+    outline: none !important;
+
+    /* Отключаем переходы, чтобы ничего не всплывало при анимации */
+    transition: none !important;
+
+    display: inline-block;
+    padding: 0 !important;
+    margin-bottom: 1rem;
 }
 
-/* Кнопка в обычных карточках */
+/* КНОПКИ */
 .btn-outline-dark {
     border: 2px solid #1b2436 !important;
     color: #1b2436 !important;
@@ -371,7 +459,6 @@
     color: #fff !important;
 }
 
-/* Кнопка в активной карточке */
 .service-card.active .btn-green-cta {
     background: var(--main-green) !important;
     border: 2px solid var(--main-green) !important;
@@ -383,53 +470,14 @@
     color: var(--main-green) !important;
 }
 
-/* --- Анимация иконок при наведении --- */
-
-/* 1. Для обычных (светлых) карточек */
-.service-card:not(.active) .service-icon-box {
-    background: #1b2436; /* Изначальный фон */
-    transition: all 0.3s ease;
-}
-
-.service-card:not(.active) .service-icon-box i {
-    color: #ffffff; /* Изначальный цвет иконки */
-    transition: all 0.3s ease;
-}
-
-.service-card:not(.active):hover .service-icon-box {
-    background: var(--main-green); /* Фон становится зеленым */
-}
-
-.service-card:not(.active):hover .service-icon-box i {
-    color: #1b2436; /* Иконка становится темной */
-}
-
-/* 2. Для активной (центральной) карточки */
-.service-card.active .service-icon-box {
-    background: var(--main-green); /* Изначальный фон активной */
-    transition: all 0.3s ease;
-}
-
-.service-card.active .service-icon-box i {
-    color: #1b2436; /* Изначальный цвет иконки активной */
-    transition: all 0.3s ease;
-}
-
-.service-card.active:hover .service-icon-box {
-    background: #ffffff; /* При наведении фон становится белым */
-}
-
-.service-card.active:hover .service-icon-box i {
-    color: var(--main-green); /* Иконка становится зеленой */
-}
-/* --- Ссылка на все услуги --- */
+/* ССЫЛКА НА ВСЕ УСЛУГИ */
 .all-services-link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     font-size: 18px;
     font-weight: 800;
-    color: #1b2436; /* Цвет твоего навбара */
+    color: #1b2436;
     text-decoration: none;
     position: relative;
     padding: 10px 20px;
@@ -441,16 +489,14 @@
     transition: transform 0.3s ease;
 }
 
-/* Эффект при наведении */
 .all-services-link:hover {
     color: var(--main-green);
 }
 
 .all-services-link:hover i {
-    transform: translateX(8px); /* Стрелочка плавно отлетает вправо */
+    transform: translateX(8px);
 }
 
-/* Опционально: подчеркивание, которое растет из центра */
 .all-services-link::after {
     content: '';
     position: absolute;
@@ -464,18 +510,67 @@
 }
 
 .all-services-link:hover::after {
-    width: 80%; /* Линия подчеркивания расширяется при наведении */
+    width: 80%;
 }
+
+/* Дублируем сброс при любых состояниях карточки */
+.service-card .service-price,
+.service-card:hover .service-price,
+.service-card.active .service-price,
+.service-card.active:hover .service-price {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 991px) {
+
+    /* Делаем все карточки "активными" по умолчанию на мобилках */
+    .service-card:not(.active) {
+        border-color: var(--main-green);
+        background: #ffffff;
+        /* Чуть светлее, чтобы выделялись */
+        box-shadow: 0 10px 20px rgba(26, 191, 123, 0.1);
+        transform: none;
+        /* Убираем прыжок вверх, на мобилках это мешает скроллу */
+    }
+
+    /* Подсвечиваем иконки в боковых карточках */
+    .service-card:not(.active) .service-icon-box {
+        background: var(--main-green);
+    }
+
+    .service-card:not(.active) .service-icon-box i {
+        color: #1b2436;
+    }
+
+    /* Увеличиваем отступы между карточками, чтобы они не слипались */
+    .services-section .col-lg-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Чтобы заголовок не был слишком огромным на телефонах */
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+
 
 /* --- Process Section Updated --- */
 .process-section {
-    background-color: #1b2436; /* Цвет навбара */
+    background-color: #1b2436;
+    /* Цвет навбара */
     color: #ffffff;
     padding: 100px 0;
 }
 
 .process-title {
-    font-size: 56px; /* Чуть увеличил главный заголовок */
+    font-size: 56px;
+    /* Чуть увеличил главный заголовок */
     font-weight: 900;
     line-height: 1.1;
 }
@@ -506,7 +601,8 @@
 
 /* Заголовки этапов — Сделал больше */
 .step-title {
-    font-size: 24px; /* Было 20px */
+    font-size: 24px;
+    /* Было 20px */
     font-weight: 800;
     color: #ffffff;
     margin-bottom: 12px;
@@ -514,16 +610,20 @@
 
 /* Описание этапов — Сделал больше и светлее */
 .step-text {
-    font-size: 17px; /* Было 15px */
+    font-size: 17px;
+    /* Было 15px */
     line-height: 1.6;
-    color: #aeb5bc; /* Светло-серый для лучшей читаемости */
+    color: #aeb5bc;
+    /* Светло-серый для лучшей читаемости */
     max-width: 500px;
 }
 
 .step-item {
     display: flex;
-    align-items: center; /* Выравнивает круг по центру высоты всего текстового блока */
-    margin-bottom: 3rem; /* Эквивалент mb-5 */
+    align-items: center;
+    /* Выравнивает круг по центру высоты всего текстового блока */
+    margin-bottom: 3rem;
+    /* Эквивалент mb-5 */
 }
 
 
@@ -544,16 +644,29 @@
 
 /* Адаптивность */
 @media (max-width: 991px) {
-    .process-title { font-size: 40px; padding-left: 30px; }
-    .step-title { font-size: 22px; }
-    .step-text { font-size: 16px; }
-    .process-photo-placeholder { border-radius: 40px; }
+    .process-title {
+        font-size: 40px;
+        padding-left: 30px;
+    }
+
+    .step-title {
+        font-size: 22px;
+    }
+
+    .step-text {
+        font-size: 16px;
+    }
+
+    .process-photo-placeholder {
+        border-radius: 40px;
+    }
 }
 
 .before-after-wrapper {
     position: relative;
     width: 100%;
-    max-width: 550px; /* Должно совпадать с шириной img ниже */
+    max-width: 550px;
+    /* Должно совпадать с шириной img ниже */
     height: 400px;
     border-radius: 40px;
     overflow: hidden;
@@ -567,12 +680,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Важно: обрезает картинку, не сжимая её */
+    overflow: hidden;
+    /* Важно: обрезает картинку, не сжимая её */
 }
 
 .img-container img {
     height: 100%;
-    width: 550px; /* ФИКСИРОВАННАЯ ШИРИНА: картинка не двигается */
+    width: 550px;
+    /* ФИКСИРОВАННАЯ ШИРИНА: картинка не двигается */
     object-fit: cover;
     display: block;
     position: absolute;
@@ -582,7 +697,7 @@
 
 /* Контейнер "До" будет менять ширину, но картинка внутри него — нет */
 .img-container.before {
-    width: 50%; 
+    width: 50%;
     z-index: 2;
 }
 
@@ -596,8 +711,18 @@
     border-radius: 4px;
     z-index: 3;
 }
-.label.before { left: 20px; background: rgba(220, 53, 69, 0.9); color: white; }
-.label.after { right: 20px; background: var(--main-green); color: #1b2436; }
+
+.label.before {
+    left: 20px;
+    background: rgba(220, 53, 69, 0.9);
+    color: white;
+}
+
+.label.after {
+    right: 20px;
+    background: var(--main-green);
+    color: #1b2436;
+}
 
 .slider-control {
     position: absolute;
@@ -634,13 +759,20 @@
     align-items: center;
     justify-content: center;
     color: #1b2436;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Для мобильных устройств: подгоняем ширину картинки через JS или медиа-запросы */
 @media (max-width: 576px) {
-    .before-after-wrapper { height: 300px; }
-    .img-container img { width: 100vw; } /* На мобилках картинка на всю ширину экрана */
+    .before-after-wrapper {
+        height: 300px;
+    }
+
+    .img-container img {
+        width: 550px;
+    }
+
+    /* Оставляем фиксированную ширину, чтобы она не сжималась при движении шторки */
 }
 
 
@@ -650,11 +782,13 @@
 /* 1. Общий контейнер */
 .calculator-section {
     padding: 80px 0;
-    background-color: #ffffff; /* Фон страницы */
+    background-color: #ffffff;
+    /* Фон страницы */
 }
 
 .calc-wrapper {
-    background-color: #1b2436; /* Цвет твоего навбара */
+    background-color: #1b2436;
+    /* Цвет твоего навбара */
     border-radius: 60px;
     overflow: hidden;
     padding: 60px;
@@ -662,9 +796,10 @@
 }
 
 /* 2. Подписи и лейблы */
-.calculator-section .form-label, 
+.calculator-section .form-label,
 .calc-label {
-    color: #aeb5bc !important; /* Светло-серый (читабельный) */
+    color: #aeb5bc !important;
+    /* Светло-серый (читабельный) */
     font-size: 13px;
     letter-spacing: 1px;
     font-weight: 700;
@@ -681,6 +816,9 @@
     font-weight: 600;
     border-radius: 15px;
     padding-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23aeb5bc' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
@@ -733,7 +871,8 @@
 }
 
 .calc-disclaimer {
-    color: #6c757d; /* Приглушенный серый для мелкого текста */
+    color: #6c757d;
+    /* Приглушенный серый для мелкого текста */
     font-size: 12px;
     line-height: 1.4;
     margin: 0;
@@ -803,13 +942,33 @@
 
 /* 7. Анимация тряски */
 @keyframes shake-animation {
-    0% { transform: translateX(0); }
-    2% { transform: translateX(-5px) rotate(-1deg); }
-    4% { transform: translateX(5px) rotate(1deg); }
-    6% { transform: translateX(-5px) rotate(-1deg); }
-    8% { transform: translateX(5px) rotate(1deg); }
-    10% { transform: translateX(0); }
-    100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    2% {
+        transform: translateX(-5px) rotate(-1deg);
+    }
+
+    4% {
+        transform: translateX(5px) rotate(1deg);
+    }
+
+    6% {
+        transform: translateX(-5px) rotate(-1deg);
+    }
+
+    8% {
+        transform: translateX(5px) rotate(1deg);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* 8. Фото-заглушка */
@@ -818,11 +977,12 @@
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 400px; /* Чтобы на больших экранах блок не схлопывался */
+    min-height: 400px;
+    /* Чтобы на больших экранах блок не схлопывался */
     border-radius: 30px;
     overflow: hidden;
     margin-top: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* Само изображение */
@@ -855,7 +1015,8 @@
     .calc-image-wrapper {
         min-height: 300px;
         margin-top: 0;
-        order: -1; /* На мобилках фото может идти перед формой или сразу после заголовка */
+        order: -1;
+        /* На мобилках фото может идти перед формой или сразу после заголовка */
         border-radius: 20px;
     }
 }
@@ -866,7 +1027,7 @@
         border-radius: 40px;
         padding: 40px 25px !important;
     }
-    
+
     /* Меняем порядок: Карточка СВЕРХУ фото */
     .special-offer-card {
         position: relative;
@@ -875,9 +1036,10 @@
         width: 100%;
         margin-bottom: 20px;
         order: 1;
-        animation: none; /* Убираем тряску на мобильных */
+        animation: none;
+        /* Убираем тряску на мобильных */
     }
-    
+
     .calc-image-placeholder {
         order: 2;
         min-height: 300px;
@@ -888,12 +1050,12 @@
         align-items: center !important;
         text-align: center;
     }
-    
+
     .total-price {
         justify-content: center;
         font-size: 42px;
     }
-    
+
     .calc-disclaimer {
         text-align: center;
         order: 3;
@@ -937,7 +1099,7 @@
 .advantage-card.dark-card:hover {
     transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .adv-icon {
@@ -987,22 +1149,41 @@
 }
 
 /* Тексты */
-.text-green { color: #26df8a !important; }
-.text-white-50 { color: rgba(255, 255, 255, 0.75) !important; line-height: 1.7; }
-.opacity-75 { opacity: 0.85; line-height: 1.8; }
+.text-green {
+    color: #26df8a !important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.75) !important;
+    line-height: 1.7;
+}
+
+.opacity-75 {
+    opacity: 0.85;
+    line-height: 1.8;
+}
 
 @media (max-width: 991px) {
-    .text-lg-end { text-align: left !important; }
-    .adv-icon.text-end { text-align: left !important; }
-    .border-green-right { border-right: 1px solid rgba(255, 255, 255, 0.1) !important; border-left: 5px solid var(--main-green) !important; }
+    .text-lg-end {
+        text-align: left !important;
+    }
+
+    .adv-icon.text-end {
+        text-align: left !important;
+    }
+
+    .border-green-right {
+        border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-left: 5px solid var(--main-green) !important;
+    }
 }
 
 
 
 /* Rewiew */
 /* Секция отзывов */
-.bg-white { 
-    background-color: #ffffff !important; 
+.bg-white {
+    background-color: #ffffff !important;
 }
 
 .review-carousel-card {
@@ -1045,7 +1226,8 @@
     color: #fff;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     width: 10%;
     opacity: 1;
 }
@@ -1084,12 +1266,17 @@
 }
 
 .review-avatar {
-    width: 100px; /* Размер фото */
+    width: 100px;
+    /* Размер фото */
     height: 100px;
-    object-fit: cover; /* Чтобы фото не растягивалось */
-    border-radius: 50%; /* Делаем круглым */
-    border: 3px solid var(--main-green); /* Зеленая рамка в стиле сайта */
-    padding: 3px; /* Отступ между фото и рамкой */
+    object-fit: cover;
+    /* Чтобы фото не растягивалось */
+    border-radius: 50%;
+    /* Делаем круглым */
+    border: 3px solid var(--main-green);
+    /* Зеленая рамка в стиле сайта */
+    padding: 3px;
+    /* Отступ между фото и рамкой */
     background-color: #fff;
 }
 
@@ -1109,12 +1296,13 @@
     border-radius: 40px;
     overflow: hidden;
     background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Внутренняя шапка внутри белого блока */
 .contact-header {
-    border-left: 6px solid var(--main-green); /* Мощный акцент слева */
+    border-left: 6px solid var(--main-green);
+    /* Мощный акцент слева */
     padding-left: 25px;
 }
 
@@ -1134,7 +1322,8 @@
     font-size: 2.5rem;
     line-height: 1.1;
     letter-spacing: -1.5px;
-    color: #1a202c; /* Глубокий темный для контраста */
+    color: #1a202c;
+    /* Глубокий темный для контраста */
 }
 
 .text-green {
@@ -1163,6 +1352,9 @@
     border-radius: 12px !important;
     font-weight: 500;
     transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .custom-input:focus {
@@ -1230,7 +1422,8 @@
 }
 
 .map-container:hover iframe {
-    filter: grayscale(0) invert(0) hue-rotate(0) brightness(1); /* Проявляется оригинал при наведении */
+    filter: grayscale(0) invert(0) hue-rotate(0) brightness(1);
+    /* Проявляется оригинал при наведении */
 }
 
 .x-small {
@@ -1244,10 +1437,221 @@
         padding-left: 15px;
         margin-bottom: 35px;
     }
+
     .display-5 {
         font-size: 1.85rem;
     }
+
     .contact-wrapper {
         border-radius: 24px;
+    }
+}
+
+/* --- Background Photo Effects --- */
+
+.contact-section.contact-bg-overlay {
+    position: relative;
+    z-index: 1;
+    background-color: #1b2436;
+    /* Цвет-заглушка на случай долгой загрузки фото */
+    overflow: hidden;
+}
+
+/* Слой с фотографией, блюром и затемнением */
+.contact-section.contact-bg-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/photo_2026-01-24_19-22-13.jpg');
+    /* Укажите путь к вашему фото */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Эффект параллакса при скролле */
+
+    /* Затемнение: чем больше 0.7, тем темнее */
+    filter: brightness(0.3) blur(8px);
+
+    /* Убираем "белые края" от блюра, немного увеличив размер фона */
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+/* Для того чтобы белый блок контактов смотрелся эффектнее на таком фоне */
+.contact-wrapper {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(5px);
+    /* Легкое размытие под самой карточкой, если у нее есть прозрачность */
+}
+
+
+/* --- FOOTER STYLES --- */
+
+.footer-bg {
+    background-color: #0d121a;
+    /* Еще темнее, чем основной синий */
+    position: relative;
+    z-index: 2;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-green);
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--main-green);
+    padding-left: 5px;
+}
+
+/* Соцсети */
+.social-link {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background: var(--main-green);
+    color: #1b2436;
+    transform: translateY(-3px);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.05);
+    opacity: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .footer-links {
+        margin-bottom: 30px;
+    }
+}
+
+/* Центрирование футера на мобилках */
+@media (max-width: 991px) {
+    .footer-bg {
+        text-align: center;
+    }
+
+    /* Выравниваем иконки соцсетей по центру */
+    .footer-socials {
+        justify-content: center !important;
+    }
+
+    /* Центрируем полоску под заголовками */
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Выравниваем контактные данные (иконка + текст) */
+    .footer-contact-item {
+        justify-content: center;
+        text-align: left;
+        /* Текст внутри блока оставляем слева, чтобы иконка была рядом */
+    }
+
+    /* Чтобы описание в первом блоке не прилипало к краям */
+    .footer-bg p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+    }
+}
+
+
+/* --- FLOATING PHONE BUTTON --- */
+
+.floating-phone-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-green);
+    color: #1b2436;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1000;
+    box-shadow: 0 10px 25px rgba(26, 191, 123, 0.4);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.floating-phone-btn:hover {
+    transform: scale(1.1);
+    color: #1b2436;
+    box-shadow: 0 15px 30px rgba(26, 191, 123, 0.6);
+}
+
+/* Пульсирующее кольцо вокруг кнопки */
+.pulse-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-green);
+    border-radius: 50%;
+    z-index: -1;
+    animation: phone-pulse 2s infinite;
+}
+
+@keyframes phone-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* Мобильная адаптация: уменьшаем кнопку, чтобы не перекрывала контент */
+@media (max-width: 768px) {
+    .floating-phone-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
     }
 }
