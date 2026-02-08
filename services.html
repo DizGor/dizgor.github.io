@@ -17,13 +17,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark header-bg sticky-top p-0">
         <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center py-3" href="#">
+            <a class="navbar-brand d-flex align-items-center py-3" href="/">
                 <div class="logo-box me-2">
                     <div class="logo-icon-placeholder"></div>
                 </div>
                 <div class="d-flex flex-column justify-content-center">
                     <span class="brand-name">JKROVLIA</span>
-                    <span class="brand-sub text-uppercase">Днепр • Качество</span>
+                    <span class="brand-sub text-uppercase">Дніпро • Якість</span>
                 </div>
             </a>
 
@@ -34,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="/">Главная</a>
+                        <a class="nav-link nav-link-custom" href="/">Головна</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom active" href="services.html">Услуги</a>
+                        <a class="nav-link nav-link-custom active" href="services.html">Послуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#">База знаний</a>
+                        <a class="nav-link nav-link-custom" href="stati.html">Статті</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-custom" href="#">Контакты</a>
+                        <a class="nav-link nav-link-custom" href="#contacts">Контакти</a>
                     </li>
                 </ul>
 
@@ -52,7 +52,7 @@
                         <div class="phone-label">ДНЕПР</div>
                         <a href="tel:+380671234567" class="phone-number text-decoration-none">+38 (067) 123–45–67</a>
                     </div>
-                    <a href="#" class="btn btn-green-cta text-uppercase fw-bold">Заказать замер</a>
+                    <a href="#contacts" class="btn btn-green-cta text-uppercase fw-bold">Замовити замір</a>
                 </div>
             </div>
 
@@ -61,187 +61,337 @@
 
     <section class="services-hero-light">
         <div class="container">
-            <div class="hero-label-dark">Возможности</div>
+            <div class="hero-label-dark">Послуги</div>
 
             <h1 class="hero-title-dark">
-                Наши <span class="green-italic-light">возможности</span>
+                Наші <span class="green-italic-light">послуги</span>
             </h1>
-
-            <p class="hero-subtext-dark">
-                Мы разработали дизайн карточек так, чтобы вы сразу видели результат и понимали состав работ.
-            </p>
         </div>
     </section>
 
     <!-- cards -->
 
     <section class="services-grid py-5">
-    <div class="container">
-        <div class="row g-4">
-            
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='soft-roof.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/myag.jpg" alt="М'яка покрівля">
-                        <span class="badge-category">ЄВРОРУБЕРОЇД</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="soft-roof.html">М'яка покрівля (Євроруберойд)</a></h3>
-                        <p class="card-text">Професійне влаштування та капітальний ремонт плоских дахів з використанням сучасних наплавних матеріалів. Процес включає повну підготовку основи, праймування та монтаж покриття у два шари для максимальної гідроізоляції терміном до 20 років.</p>
-                        <a href="soft-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>140</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='soft-roof.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/myag.jpg" alt="М'яка покрівля">
+                            <span class="badge-category">ЄВРОРУБЕРОЇД</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="soft-roof.html">М'яка покрівля (Євроруберойд)</a></h3>
+                            <p class="card-text">Професійне влаштування та капітальний ремонт плоских дахів з
+                                використанням сучасних наплавних матеріалів. Процес включає повну підготовку основи,
+                                праймування та монтаж покриття у два шари для максимальної гідроізоляції терміном до 20
+                                років.</p>
+                            <a href="soft-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>140</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='hard-roof.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/metall.jpg" alt="Жерстка покрівля">
-                        <span class="badge-category">МЕТАЛ</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="hard-roof.html">Жерстка покрівля (Профлист/металочерепиця)</a></h3>
-                        <p class="card-text">Монтаж скатних дахів будь-якої складності з використанням металочерепиці та профнастилу. Ми забезпечуємо правильний «покрівельний пиріг» з вентиляцією, паро- та гідробар'єром, що гарантує відсутність конденсату та захист кроквяної системи.</p>
-                        <a href="hard-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>220</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='hard-roof.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/metall.jpg" alt="Жерстка покрівля">
+                            <span class="badge-category">МЕТАЛ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="hard-roof.html">Жерстка покрівля
+                                    (Профлист/металочерепиця)</a></h3>
+                            <p class="card-text">Монтаж скатних дахів будь-якої складності з використанням
+                                металочерепиці та профнастилу. Ми забезпечуємо правильний «покрівельний пиріг» з
+                                вентиляцією, паро- та гідробар'єром, що гарантує відсутність конденсату та захист
+                                кроквяної системи.</p>
+                            <a href="hard-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>220</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='slate-roof.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/shifer.jpg" alt="Шиферна покрівля">
-                        <span class="badge-category">КЛАСИКА</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="slate-roof.html">Шиферна покрівля</a></h3>
-                        <p class="card-text">Надійне та перевірене часом рішення для приватного сектора. Виконуємо як повний монтаж з нуля, так і часткову заміну пошкоджених листів шиферу. Оптимальний вибір для тих, хто шукає довговічне покриття за доступною ціною з мінімальними витратами.</p>
-                        <a href="slate-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>100</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='slate-roof.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/shifer.jpg" alt="Шиферна покрівля">
+                            <span class="badge-category">КЛАСИКА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="slate-roof.html">Шиферна покрівля</a></h3>
+                            <p class="card-text">Надійне та перевірене часом рішення для приватного сектора. Виконуємо
+                                як повний монтаж з нуля, так і часткову заміну пошкоджених листів шиферу. Оптимальний
+                                вибір для тих, хто шукає довговічне покриття за доступною ціною з мінімальними
+                                витратами.</p>
+                            <a href="slate-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>100</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='drainage.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/vodos.jpg" alt="Водостічні системи">
-                        <span class="badge-category">ВОДОВІДВЕДЕННЯ</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="drainage.html">Монтаж водостічних систем</a></h3>
-                        <p class="card-text">Комплексний розрахунок та встановлення систем відведення дощової води. Правильний підбір діаметра жолобів та труб дозволяє захистити фасад від бризок, а фундамент — від підмивання, що значно подовжує термін експлуатації всієї будівлі.</p>
-                        <a href="drainage.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>110</span> грн/п.м.</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='drainage.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/vodos.jpg" alt="Водостічні системи">
+                            <span class="badge-category">ВОДОВІДВЕДЕННЯ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="drainage.html">Монтаж водостічних систем</a></h3>
+                            <p class="card-text">Комплексний розрахунок та встановлення систем відведення дощової води.
+                                Правильний підбір діаметра жолобів та труб дозволяє захистити фасад від бризок, а
+                                фундамент — від підмивання, що значно подовжує термін експлуатації всієї будівлі.</p>
+                            <a href="drainage.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>110</span> грн/п.м.</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='repair.html';">
-                    <div class="card-image-part">
-                        <img src="images/leak-repair.jpg" alt="Ремонт покрівлі">
-                        <span class="badge-category">ТЕРМІНОВО</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="repair.html">Ремонт та усунення протікань</a></h3>
-                        <p class="card-text">Оперативний виїзд бригади для ліквідації аварійних протікань. Проводимо заміну пошкоджених елементів, герметизацію швів та стиків, а також ремонт розжолобків. Гарантуємо відновлення герметичності покрівлі у найкоротші терміни.</p>
-                        <a href="repair.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>500</span> грн</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='repair.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/remont.jpg" alt="Ремонт покрівлі">
+                            <span class="badge-category">ТЕРМІНОВО</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="repair.html">Ремонт та усунення протікань</a></h3>
+                            <p class="card-text">Оперативний виїзд бригади для ліквідації аварійних протікань. Проводимо
+                                заміну пошкоджених елементів, герметизацію швів та стиків, а також ремонт розжолобків.
+                                Гарантуємо відновлення герметичності покрівлі у найкоротші терміни.</p>
+                            <a href="repair.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>500</span> грн</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='bitumen-roof.html';">
-                    <div class="card-image-part">
-                        <img src="images/bitumen.jpg" alt="Бітумна черепиця">
-                        <span class="badge-category">ПРЕМІУМ</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="bitumen-roof.html">Бітумна черепиця</a></h3>
-                        <p class="card-text">Монтаж м'якої черепиці для дахів складної геометричної форми. Це безшумне покриття, яке не боїться корозії та має чудовий естетичний вигляд. Робота включає підготовку суцільної основи з OSB-плит та монтаж підкладкового килима.</p>
-                        <a href="bitumen-roof.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>250</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='bitumen-roof.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/bitum.jpg" alt="Бітумна черепиця">
+                            <span class="badge-category">ПРЕМІУМ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="bitumen-roof.html">Бітумна черепиця</a></h3>
+                            <p class="card-text">Монтаж м'якої черепиці для дахів складної геометричної форми. Це
+                                безшумне покриття, яке не боїться корозії та має чудовий естетичний вигляд. Робота
+                                включає підготовку суцільної основи з OSB-плит та монтаж підкладкового килима.</p>
+                            <a href="bitumen-roof.html" class="btn-more">Докладніше <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>250</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='insulation.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/utepl.jpg" alt="Утеплення даху">
-                        <span class="badge-category">ЕНЕРГОЕФЕКТИВНІСТЬ</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="insulation.html">Утеплення даху та горища</a></h3>
-                        <p class="card-text">Професійна теплоізоляція покрівлі мінеральною ватою або пінополістиролом. Якісне утеплення дозволяє не тільки економити до 40% на опаленні взимку, але й зберігає прохолоду в приміщенні влітку, створюючи комфортний мікроклімат.</p>
-                        <a href="insulation.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>120</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='insulation.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/utepl.jpg" alt="Утеплення даху">
+                            <span class="badge-category">ЕНЕРГОЕФЕКТИВНІСТЬ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="insulation.html">Утеплення даху та горища</a></h3>
+                            <p class="card-text">Професійна теплоізоляція покрівлі мінеральною ватою або
+                                пінополістиролом. Якісне утеплення дозволяє не тільки економити до 40% на опаленні
+                                взимку, але й зберігає прохолоду в приміщенні влітку, створюючи комфортний мікроклімат.
+                            </p>
+                            <a href="insulation.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>120</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='inspection.html';">
-                    <div class="card-image-part">
-                        <img src="images/inspection.jpg" alt="Огляд даху">
-                        <span class="badge-category">ЕКСПЕРТИЗА</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="inspection.html">Професійний огляд вашого даху</a></h3>
-                        <p class="card-text">Комплексна перевірка стану покрівельного покриття, кроквяної конструкції та горищних приміщень. Ми знаходимо приховані дефекти та зони ризику, надаючи замовнику детальний звіт та план необхідних робіт для запобігання великим витратам.</p>
-                        <a href="inspection.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price"><span>Безкоштовно</span>*</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='inspection.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/rewiev.jpg" alt="Огляд даху">
+                            <span class="badge-category">ЕКСПЕРТИЗА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="inspection.html">Професійний огляд вашого даху</a></h3>
+                            <p class="card-text">Комплексна перевірка стану покрівельного покриття, кроквяної
+                                конструкції та горищних приміщень. Ми знаходимо приховані дефекти та зони ризику,
+                                надаючи замовнику детальний звіт та план необхідних робіт для запобігання великим
+                                витратам.</p>
+                            <a href="inspection.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>200</span> грн</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6">
-                <div class="service-new-card" onclick="location.href='solar-ready.html';">
-                    <div class="card-image-part">
-                        <img src="source/images/services/sun.jpg" alt="Сонячні панелі">
-                        <span class="badge-category">ЕНЕРГОНЕЗАЛЕЖНІСТЬ</span>
-                    </div>
-                    <div class="card-content-part">
-                        <h3 class="card-title"><a href="solar-ready.html">Підготовка даху до сонячних панелей</a></h3>
-                        <p class="card-text">Спеціальна послуга з перевірки та посилення покрівлі перед встановленням СЕС. Ми монтуємо герметичні закладувальні елементи та кріплення, щоб встановлення панелей не призвело до пошкодження гідроізоляції та протікання даху в майбутньому.</p>
-                        <a href="solar-ready.html" class="btn-more">Докладніше <i class="fas fa-arrow-right"></i></a>
-                        <div class="card-footer-action">
-                            <div class="card-price">від <span>150</span> грн/м²</div>
-                            <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='solar-ready.html';">
+                        <div class="card-image-part">
+                            <img src="source/images/services/sun.jpg" alt="Сонячні панелі">
+                            <span class="badge-category">ЕНЕРГОНЕЗАЛЕЖНІСТЬ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="solar-ready.html">Підготовка даху до сонячних панелей</a>
+                            </h3>
+                            <p class="card-text">Спеціальна послуга з перевірки та посилення покрівлі перед
+                                встановленням СЕС. Ми монтуємо герметичні закладувальні елементи та кріплення, щоб
+                                встановлення панелей не призвело до пошкодження гідроізоляції та протікання даху в
+                                майбутньому.</p>
+                            <a href="solar-ready.html" class="btn-more">Докладніше <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>150</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАМОВИТИ</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div> </div> </section>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/balcony.jpg" alt="Ремонт покрівлі балкона">
+                            <span class="badge-category">БАЛКОНИ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Ремонт покрівлі балкона (козирка)</h3>
+                            <p class="card-text">Професійне відновлення гідроізоляції балконних дахів, особливо на
+                                останніх поверхах. Ми усуваємо протікання, проводимо герметизацію примикань до стіни та
+                                використовуємо якісний євроруберойд із захисним гранітним посипанням, що надійно
+                                захистить вашу квартиру від вологи та грибка.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>1500</span> грн/од.</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/garage.jpg" alt="Ремонт даху гаража">
+                            <span class="badge-category">ГАРАЖІ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Ремонт даху гаража</h3>
+                            <p class="card-text">Комплексне відновлення герметичності гаражної покрівлі. Ми виконуємо
+                                очищення від старого сміття, ремонт тріщин в основі, праймування та наплавлення нового
+                                шару руберойду під пальну горелку. Це гарантує надійний захист вашого автомобіля від
+                                опадів та корозії на довгі роки.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>140</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/onduline.jpg" alt="Покрівля з ондуліну">
+                            <span class="badge-category">ЄВРОШИФЕР</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Покрівля з ондуліну (Єврошифер)</h3>
+                            <p class="card-text">Монтаж легкого, безшумного та екологічного покриття Onduline. Це
+                                ідеальний варіант для приватних будинків та господарських будівель, оскільки матеріал не
+                                іржавіє, не шумить під час дощу та дуже швидко монтується. Надаємо гарантію на
+                                герметичність від виробника.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>180</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/foundation.jpg" alt="Гідроізоляція фундаменту">
+                            <span class="badge-category">ЗАХИСТ ОСНОВИ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Гідроізоляція фундаменту</h3>
+                            <p class="card-text">Надійний захист підземної частини будівлі від ґрунтових вод та вологи.
+                                Ми виконуємо професійну вертикальну та горизонтальну гідроізоляцію наплавними
+                                матеріалами або мастиками, що гарантує сухі підвали та міцність всього будинку на
+                                десятиліття.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>160</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/screed.jpg" alt="Стяжка на покрівлі">
+                            <span class="badge-category">ПІДГОТОВКА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Влаштування стяжки на покрівлі</h3>
+                            <p class="card-text">Створення міцної основи та правильної розуклонки для ефективного
+                                відведення дощової води. Ми виконуємо цементно-піщану стяжку з армуванням під наплавну
+                                покрівлю або ПВХ-мембрану, що виключає появу застійних зон та калюж на даху.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>180</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="source/images/services/new-roof.jpg" alt="Будівництво даху з нуля">
+                            <span class="badge-category">КАПІТАЛЬНЕ БУДІВНИЦТВО</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Будівництво даху «під ключ»</h3>
+                            <p class="card-text">Повний комплекс робіт зі зведення покрівлі з нуля: від монтажу
+                                кроквяної системи та утеплення до укладання фінішного покриття та встановлення
+                                водостоків. Ми беремо на себе всі етапи будівництва, гарантуючи надійність конструкції
+                                та дотримання всіх норм.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">від <span>450</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАМОВИТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
 
@@ -362,7 +512,7 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="footer-title text-white mb-4">Услуги</h5>
                     <ul class="footer-links list-unstyled">
-                        <li><a href="#">Мягкая кровля</a></li>
+                        <li><a href="soft-roof.html">Мягкая кровля</a></li>
                         <li><a href="#">Жесткая кровля</a></li>
                         <li><a href="#">Ремонт крыш</a></li>
                         <li><a href="#">Водостоки</a></li>

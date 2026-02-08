@@ -1,0 +1,89 @@
+/* Дизайн карток Бази Знань */
+    .knowledge-base-section {
+        padding: 80px 0;
+        background-color: #f8fafd; /* Твій фон секції */
+    }
+
+    .article-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #eef1f6;
+    }
+
+    .article-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(27, 36, 54, 0.1);
+    }
+
+    .article-img {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .article-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .category-tag {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        background: #1abf7b; /* Твій зелений */
+        color: #fff;
+        padding: 5px 12px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .article-body {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-body h4 {
+        color: #1b2436; /* Твій темний */
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 1.4;
+        font-size: 1.25rem;
+    }
+
+    .article-body p {
+        color: #444; /* Чіткий текст */
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .read-more-link {
+        color: #1abf7b;
+        font-weight: 700;
+        text-decoration: none;
+        margin-top: auto;
+        display: inline-flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .read-more-link i {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+    .read-more-link:hover {
+        color: #1b2436;
+        gap: 5px;
+    }
