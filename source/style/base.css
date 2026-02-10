@@ -1,89 +1,238 @@
 /* Дизайн карток Бази Знань */
-    .knowledge-base-section {
-        padding: 80px 0;
-        background-color: #f8fafd; /* Твій фон секції */
-    }
 
-    .article-card {
-        background: #fff;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #eef1f6;
-    }
+.knowledge-base-section {
+    padding: 40px 0;
+    /* Було 80px */
+    background-color: #f8fafd;
+}
 
-    .article-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(27, 36, 54, 0.1);
-    }
+.article-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eef1f6;
+}
 
-    .article-img {
-        position: relative;
-        height: 220px;
-        overflow: hidden;
-    }
+.article-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(27, 36, 54, 0.1);
+}
 
-    .article-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.article-img {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
 
-    .category-tag {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        background: #1abf7b; /* Твій зелений */
-        color: #fff;
-        padding: 5px 12px;
-        border-radius: 5px;
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+.article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    .article-body {
-        padding: 25px;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
+.category-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #1abf7b;
+    /* Твій зелений */
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 
-    .article-body h4 {
-        color: #1b2436; /* Твій темний */
-        font-weight: 700;
-        margin-bottom: 15px;
-        line-height: 1.4;
-        font-size: 1.25rem;
-    }
+.article-body {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-    .article-body p {
-        color: #444; /* Чіткий текст */
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
+.article-body h4 {
+    color: #1b2436;
+    /* Твій темний */
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    font-size: 1.25rem;
+}
 
-    .read-more-link {
-        color: #1abf7b;
-        font-weight: 700;
-        text-decoration: none;
-        margin-top: auto;
-        display: inline-flex;
-        align-items: center;
-        transition: 0.3s;
-    }
+.article-body p {
+    color: #444;
+    /* Чіткий текст */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
 
-    .read-more-link i {
-        margin-left: 8px;
-        font-size: 12px;
-    }
+.read-more-link {
+    color: #1abf7b;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+}
 
-    .read-more-link:hover {
-        color: #1b2436;
-        gap: 5px;
+.read-more-link i {
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.read-more-link:hover {
+    color: #1b2436;
+    gap: 5px;
+}
+
+/* --- Стилі для Бази Знань та Статей --- */
+
+.article-detail-section {
+    padding: 60px 0;
+    background-color: #f8fafd;
+}
+
+.article-content-wrapper {
+    border: 1px solid #eef1f6;
+    line-height: 1.8;
+}
+
+.article-title {
+    color: #1b2436;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+/* Стилізація тексту всередині статті */
+.article-text {
+    font-size: 1.1rem;
+    color: #1b2436;
+}
+
+.article-text p {
+    margin-bottom: 1.5rem;
+}
+
+.article-text h3 {
+    font-weight: 700;
+    margin-top: 2rem; /* Трохи зменшили з 2.5rem */
+    margin-bottom: 1.2rem;
+    color: #1b2436;
+    border-left: 4px solid #1abf7b;
+    padding-left: 15px;
+}
+
+.article-text h3:first-of-type {
+    margin-top: 0 !important;
+}
+
+.article-text h4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Виділений текст (lead) */
+.article-text .lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #444;
+    border-bottom: 1px solid #eef1f6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Кольорові акценти та бейджі */
+.bg-green {
+    background-color: #1abf7b !important;
+    color: #fff;
+    padding: 8px 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Покращення для списків у статтях */
+.article-text .brand-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.article-text .brand-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+.article-text .brand-list li::before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #1abf7b;
+}
+
+/* Блок CTA (Call to Action) внизу статті */
+.author-cta-box {
+    background: #1b2436;
+    color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.author-cta-box h5 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 1.8rem;
     }
+}
+
+/* Покращення для статті */
+.border-start-green {
+    border-left: 5px solid #1abf7b !important;
+}
+
+.rounded-4 {
+    border-radius: 1.25rem !important;
+}
+
+.bg-light {
+    background-color: #f7fafc !important;
+}
+
+/* Анімація для блоків "Анатомія руйнування" */
+.article-text .shadow-sm:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #1abf7b;
+}
+
+/* Налаштування великих заголовків */
+.display-6 {
+    font-weight: 800;
+    color: #1b2436;
+    letter-spacing: -1px;
+}
+
+.article-text .brand-list li::before {
+    content: "\f00c";
+    /* Змінив на галочку */
+    font-weight: 900;
+    color: #1abf7b;
+}

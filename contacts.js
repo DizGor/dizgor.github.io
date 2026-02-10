@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
     // Проверка: заполнен ли телефон полностью
     if (!mask.masked.isComplete) {
-        alert('Пожалуйста, введите номер телефона полностью');
+        alert('Будь ласка, заповніть номер телефону повністю');
         phoneElement.style.border = '2px solid #e63946'; // Подсветка ошибки
         return;
     } else {
@@ -35,15 +35,15 @@ document.getElementById('contactForm').addEventListener('submit', async function
     }
 
     // Собираем данные
-    const name = this.querySelector('input[placeholder="Иван"]').value;
+    const name = this.querySelector('input[placeholder="Іван"]').value;
     const phone = mask.value; // Берем значение из маски
-    const address = this.querySelector('input[placeholder*="Днепр"]').value;
+    const address = this.querySelector('input[placeholder*="Дніпро"]').value;
     const message = this.querySelector('textarea').value;
 
-    const text = `<b>🚀 Новая заявка JKROVLIA</b>\n\n` +
-                 `<b>👤 Имя:</b> ${name}\n` +
+    const text = `<b>🚀 Нова заявка з сайту Pokrivlia_Dnipro</b>\n\n` +
+                 `<b>👤 Ім'я:</b> ${name}\n` +
                  `<b>📞 Тел:</b> ${phone}\n` +
-                 `<b>📍 Объект:</b> ${address}\n` +
+                 `<b>📍 Об'єкт:</b> ${address}\n` +
                  `<b>📝 Проблема:</b> ${message}`;
 
     // Состояние загрузки (Зеленый акцент)
