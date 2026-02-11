@@ -63,7 +63,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
 
         if (response.ok) {
             // Успешная отправка
-            btn.innerHTML = '<i class="fas fa-check me-2"></i> Отправлено!';
+            btn.innerHTML = '<i class="fas fa-check me-2"></i> Відправлено!';
             btn.classList.add('btn-success'); // Стандартный зеленый Bootstrap или твой
             btn.style.backgroundColor = '#1abf7b'; // Твой фирменный зеленый
             

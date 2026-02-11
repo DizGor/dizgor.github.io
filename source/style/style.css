@@ -25,22 +25,36 @@ html {
 }
 
 /* Логотип */
+
+/* --- ЗБІЛЬШЕННЯ ВИСОТИ ШАПКИ --- */
+.navbar {
+    /* На комп'ютері: робимо відступи ще більшими */
+    padding-top: 10px !important; 
+    padding-bottom: 10px !important;
+    min-height: 80px; /* Гарантована мінімальна висота для ПК */
+}
+/* --- ЛОГОТИП И БРЕНД --- */
 .navbar-brand {
     transition: transform 0.3s ease !important;
+    display: flex;
+    align-items: center;
+    margin-right: 10px !important;
 }
 
 .navbar-brand:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .logo-box {
-    width: 42px;
-    height: 42px;
+    /* На мобилках минимум 42px, на десктопе до 48px */
+    width: clamp(42px, 10vw, 48px) !important;
+    height: clamp(42px, 10vw, 48px) !important;
     background-color: var(--main-green);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .logo-icon-placeholder {
@@ -49,40 +63,39 @@ html {
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     border-bottom: 14px solid #12181f;
-    /* Цвет фона логотипа */
 }
 
 .brand-name {
-    font-size: 24px;
+    /* Адаптивный размер: крупный на 11 Pro Max и ПК */
+    font-size: clamp(22px, 6vw, 26px) !important;
     font-weight: 900;
     color: #ffffff;
     line-height: 0.85;
+    white-space: nowrap;
+    letter-spacing: -0.5px; /* Немного плотнее, чтобы влезло больше при большом шрифте */
 }
 
 .brand-sub {
-    font-size: 9px;
+    font-size: clamp(9px, 2.5vw, 11px) !important;
     font-weight: 800;
     color: var(--main-green);
-    margin-top: 3px;
+    margin-top: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
-/* Навигация */
+/* --- НАВИГАЦИЯ --- */
 .nav-link-custom {
     color: rgba(255, 255, 255, 0.7) !important;
-    /* Сделал чуть ярче для читабельности */
     font-weight: 600;
     font-size: 15px !important;
-    margin: 0 15px;
+    margin: 0 12px;
     padding-bottom: 5px !important;
     transition: all 0.3s ease;
     position: relative;
 }
 
-.nav-link-custom:hover {
-    color: var(--main-green) !important;
-}
-
-.nav-link-custom.active {
+.nav-link-custom:hover, .nav-link-custom.active {
     color: var(--main-green) !important;
 }
 
@@ -95,10 +108,9 @@ html {
     height: 2px;
     background-color: var(--main-green);
     box-shadow: 0 0 10px var(--main-green);
-    /* Небольшое свечение активной линии */
 }
 
-/* Телефон */
+/* --- ТЕЛЕФОН И КНОПКА --- */
 .phone-label {
     font-size: 10px !important;
     color: var(--main-green);
@@ -113,57 +125,101 @@ html {
     white-space: nowrap;
 }
 
-/* Кнопка */
 .btn-green-cta {
     background-color: var(--main-green) !important;
     color: #12181f !important;
     font-size: 14px !important;
-    padding: 10px 25px !important;
-    /* Оптимизировал размер для шапки */
+    padding: 10px 22px !important;
     border-radius: 12px !important;
     border: 2px solid var(--main-green) !important;
-    white-space: nowrap;
+    font-weight: 700;
     transition: 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
 }
 
-.btn-green-cta:hover {
-    background-color: #ffffff !important;
-    color: var(--main-green) !important;
-    border-color: #ffffff !important;
-}
-
-/* Адаптив */
+/* --- МОБИЛЬНАЯ АДАПТАЦИЯ (До 991px) --- */
 @media (max-width: 991px) {
+    .navbar {
+        padding-top: 12px !important;   /* Додаємо "повітря" зверху */
+        padding-bottom: 12px !important; /* Додаємо "повітря" знизу */
+        min-height: 80px;               /* Гарантована мінімальна висота */
+    }
+
+    /* 2. Ще трохи збільшуємо сам логотип спеціально для мобілки */
+    .logo-box {
+        width: 46px !important;  /* Фіксований більший розмір для мобілки */
+        height: 46px !important;
+        border-radius: 10px;     /* Трохи більше округлення для солідності */
+    }
+    
+    /* 3. Підтягуємо розмір тексту під великий логотип */
+    .brand-name {
+        font-size: 24px !important; 
+        line-height: 1.0;
+    }
+
     .navbar-collapse {
-        padding: 25px 0;
+        top: 100% !important; 
+    }
+
+    .brand-sub {
+        font-size: 10px !important;
+        margin-top: 1px;
+    }
+
+    .container {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        flex-wrap: nowrap !important; /* Запрещаем перенос на новую строку */
+    }
+
+    .navbar-brand {
+        margin-right: auto !important; /* Выталкивает кнопки вправо */
+    }
+
+    .logo-box.me-2 {
+        margin-right: 0.5rem !important;
+    }
+
+    /* Выпадающее меню поверх контента */
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         background-color: #12181f;
-        /* Плотный фон для мобильного меню */
+        padding: 20px;
+        z-index: 1050;
+        border-bottom: 2px solid var(--main-green);
     }
 
     .nav-link-custom {
-        margin: 10px 0;
         text-align: center;
+        margin: 15px 0;
     }
+}
 
-    .nav-link-custom.active::after {
-        left: 25%;
-        width: 50%;
+/* --- ФИКС ДЛЯ СОВСЕМ МАЛЕНЬКИХ (до 375px) --- */
+@media (max-width: 375px) {
+    .brand-name {
+        font-size: 20px !important;
+    }
+    .logo-box {
+        width: 38px !important;
+        height: 38px !important;
     }
 }
 
 /* --- Hero Блок --- */
+/* --- Hero Блок --- */
 .hero-section {
     position: relative;
     overflow: hidden;
-    padding: 100px 0;
-    /* Увеличил отступы для солидности */
+    padding: clamp(60px, 10vw, 120px) 0; /* Адаптивні відступи: менші на мобілці, великі на ПК */
     background-color: #1b2436;
-    /* Цвет заглушки, пока грузится фото */
     color: white;
+    display: flex;
+    align-items: center;
+    min-height: 80vh; /* Щоб блок виглядав солідно на будь-якому екрані */
 }
 
 .hero-section::before {
@@ -173,36 +229,30 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-
-    /* ИСПРАВЛЕНО: Прямые слэши / вместо обратных \ */
-    background-image:
-        linear-gradient(rgba(27, 36, 54, 0.7), rgba(27, 36, 54, 0.7)),
+    /* Шлях до фото. Якщо файл CSS у папці /css, а фото у /images, використовуй ../images/ */
+    background-image: 
+        linear-gradient(rgba(27, 36, 54, 0.75), rgba(27, 36, 54, 0.75)), 
         url('../images/photo_2026-01-24_19-22-13.jpg');
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    /* Размытие */
     filter: blur(8px);
-
-    /* Масштаб, чтобы скрыть белые края размытия */
-    transform: scale(1.1);
-
+    transform: scale(1.1); /* Ховаємо розмиті краї */
     z-index: 0;
 }
 
-/* Контент должен быть выше фона */
 .hero-section .container {
     position: relative;
     z-index: 2;
 }
 
+/* Заголовок */
 .hero-title {
-    font-size: 72px;
+    /* Авто-розмір: від 36px на смартфонах до 72px на моніторах */
+    font-size: clamp(36px, 7vw, 72px); 
     font-weight: 900;
     color: #ffffff;
-    line-height: 1.1;
+    line-height: 1.05;
     margin-bottom: 25px;
 }
 
@@ -210,93 +260,189 @@ html {
     color: var(--main-green);
 }
 
+/* Підзаголовок */
 .hero-subtitle {
-    font-size: 18px;
-    color: var(--text-gray);
+    font-size: clamp(16px, 2vw, 18px);
+    color: rgba(255, 255, 255, 0.8);
     max-width: 550px;
     line-height: 1.6;
+    margin-bottom: 35px;
 }
 
-/* Кнопки */
+/* --- КНОПКИ (Виправлено центрування) --- */
+.btn-green-cta, .btn-outline-white {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-radius: 18px !important;
+    /* Використовуємо однакові паддінги та line-height: 1 для ідеального центру */
+    padding: 18px 40px !important; 
+    line-height: 1 !important;
+    text-decoration: none;
+}
+
 .btn-green-cta {
     background: var(--main-green);
-    color: #ffffff;
-    border-radius: 18px;
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: 0.3s;
+    color: #12181f !important; /* Темний текст на зеленому фоні зазвичай читається краще */
+    border: 2px solid var(--main-green) !important;
 }
 
 .btn-green-cta:hover {
-    filter: brightness(1.1);
-    color: #ffffff;
+    background: transparent;
+    color: var(--main-green) !important;
+    filter: brightness(1.2);
 }
 
 .btn-outline-white {
     background: transparent;
     color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 18px !important;
-    font-size: 14px;
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
 }
 
-/* Позиционирование дома */
+.btn-outline-white:hover {
+    border-color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Зображення будинку */
 .hero-image-container {
     display: flex;
     justify-content: flex-end;
-    transform: translateY(-20px);
-    /* Отрицательное значение — вверх, положительное — вниз */
+    position: relative;
 }
 
 .hero-house-img {
-    max-width: 180%;
-    /* Позволяет дому быть крупнее колонки */
+    max-width: 160%; /* Будинок виходить за межі колонки для ефекту об'єму */
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5));
 }
 
 /* Статистика */
+.hero-stats-container {
+    margin-top: 50px;
+    width: 100%;
+}
+
 .stats-divider {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    opacity: 1;
 }
 
 .stat-number {
-    font-size: 50px;
+    font-size: clamp(32px, 5vw, 50px);
     font-weight: 900;
     color: #ffffff;
+    line-height: 1;
 }
 
 .stat-text {
     font-size: 11px;
     font-weight: 700;
-    color: var(--text-gray);
-    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 8px;
+    letter-spacing: 1px;
 }
 
-/* Адаптив */
+/* Контейнер для фото, который имитирует высоту текста рядом */
+.stat-photo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-photo-full {
+    width: 100%;        /* Растягиваем на всю ширину контейнера */
+    object-fit: cover;  /* Чтобы фото не сплющивалось */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-photo-full:hover {
+    transform: scale(1.05);
+    border-color: var(--main-green);
+}
+
+/* Фикс для мобилок: выравниваем все колонки по центру по вертикали */
+.hero-stats-container .row {
+    display: flex;
+    align-items: center; 
+}
+
+/* --- АДАПТИВ --- */
+
+/* ДЕСКТОП: Высота как у текста рядом */
+@media (min-width: 992px) {
+    .stat-photo-wrapper {
+        height: calc(clamp(32px, 5vw, 50px) + 8px + 14px); 
+    }
+    .stat-photo-full {
+        height: 100%;
+        width: auto; /* На ПК ширина подстраивается под высоту */
+        min-width: 120px;
+    }
+}
+
 @media (max-width: 991px) {
-    .hero-stats-container {
-        display: none;
-    }
-
-    .hero-title {
-        font-size: 42px;
-    }
-
     .hero-section {
         text-align: center;
+        padding: 80px 0;
     }
 
     .hero-subtitle {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .d-flex.flex-wrap {
+    .hero-image-container {
+        display: none; /* Ховаємо будинок на мобільних, щоб не захаращувати екран */
+    }
+
+    .hero-stats-container {
+        display: block; /* Можна залишити, якщо вони виглядають охайно */
+        margin-top: 40px;
+    }
+
+    .gap-3 {
         justify-content: center;
+    }
+
+    .btn-green-cta, .btn-outline-white {
+        width: 100%; /* На мобільних кнопки на всю ширину зазвичай зручніші */
+        max-width: 300px;
+    }
+    
+    .stat-photo-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Центруємо фото по горизонталі */
+        align-items: center;
+        margin-top: 20px;
+        /* Обмежуємо загальну висоту контейнера, щоб фото не було завеликим */
+        height: 120px; 
+    }
+    
+    .stat-photo-full {
+        /* 1. Щоб не обрізалося, ставимо max-height і max-width */
+        max-height: 100%;
+        max-width: 85%; /* Робимо трохи вужчим за екран */
+        
+        /* 2. Зберігаємо пропорції без обрізки */
+        width: auto; 
+        height: auto;
+        object-fit: contain; 
+        
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
