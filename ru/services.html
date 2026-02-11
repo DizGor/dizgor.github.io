@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кровельные услуги в Днепре | Ремонт и монтаж крыши — цена за м2</title>
+    <meta name="description"
+        content="Полный спектр кровельных работ в Днепре: ремонт гаражей, коттеджей, монтаж мягкой и жесткой кровли, утепление и гидроизоляция. Гарантия на работу от 10 лет!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../source/style/style.css">
+    <link rel="stylesheet" href="../source/style/service-page.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark header-bg sticky-top p-0">
+        <div class="container d-flex align-items-center justify-content-between flex-nowrap">
+
+            <a class="navbar-brand d-flex align-items-center py-2" href="index.html">
+                <div class="logo-box me-2">
+                    <div class="logo-icon-placeholder"></div>
+                </div>
+                <div class="d-flex flex-column justify-content-center">
+                    <span class="brand-name">Кровля Днепр</span>
+                    <span class="brand-sub text-uppercase">Днепр • Качество</span>
+                </div>
+            </a>
+
+            <div class="d-flex align-items-center">
+                <div class="dropdown me-2">
+                    <button class="btn btn-link nav-link-custom dropdown-toggle p-0" type="button" id="langSwitcher"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="text-decoration: none; color: white; border: none; min-width: 35px;">
+                        RU
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="langSwitcher">
+                        <li><a class="dropdown-item" href="../services.html"
+                                onclick="localStorage.setItem('user_lang', 'uk')">UA</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" style="font-size: 1rem;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom active" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="stati.html">База знаний</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#contacts">Контакты</a></li>
+                </ul>
+
+                <div class="d-lg-none text-center pb-4">
+                    <div class="phone-label">ДНЕПР</div>
+                    <a href="tel:+380671234567" class="phone-number text-decoration-none d-block mb-3">+38 (067)
+                        123–45–67</a>
+                    <a href="#contacts" class="btn btn-green-cta text-uppercase fw-bold">Заказать замер</a>
+                </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center">
+                <div class="phone-container text-end me-3">
+                    <div class="phone-label">ДНЕПР</div>
+                    <a href="tel:+380671234567" class="phone-number text-decoration-none">+38 (067) 123–45–67</a>
+                </div>
+                <a href="#contacts" class="btn btn-green-cta text-uppercase fw-bold">Заказать замер</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="services-hero-light">
+        <div class="container">
+            <div class="hero-label-dark">Услуги</div>
+            <h1 class="hero-title-dark">
+                Наши <span class="green-italic-light">услуги</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="services-grid py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='soft-roof.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/myag.jpg" alt="Мягкая кровля">
+                            <span class="badge-category">ЕВРОРУБЕРОИД</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="soft-roof.html">Мягкая кровля (Еврорубероид)</a></h3>
+                            <p class="card-text">Профессиональное устройство и капитальный ремонт плоских крыш с
+                                использованием современных наплавляемых материалов. Включает подготовку основания,
+                                праймирование и монтаж в два слоя для гидроизоляции до 20 лет.</p>
+                            <a href="soft-roof.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>140</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='hard-roof.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/metall.jpg" alt="Жесткая кровля">
+                            <span class="badge-category">МЕТАЛЛ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="hard-roof.html">Жесткая кровля (Профлист/черепица)</a></h3>
+                            <p class="card-text">Монтаж скатных крыш любой сложности. Мы обеспечиваем правильный
+                                «кровельный пирог» с вентиляцией и гидробарьером, что гарантирует отсутствие конденсата
+                                и защиту стропильной системы.</p>
+                            <a href="hard-roof.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>220</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='slate-roof.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/shifer.jpg" alt="Шиферная кровля">
+                            <span class="badge-category">КЛАССИКА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="slate-roof.html">Шиферная кровля</a></h3>
+                            <p class="card-text">Надежное решение для частного сектора. Выполняем как полный монтаж с
+                                нуля, так и частичную замену листов. Оптимальный выбор для долговечного покрытия при
+                                минимальных затратах.</p>
+                            <a href="slate-roof.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>100</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='drainage.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/vodos.jpg" alt="Водосточные системы">
+                            <span class="badge-category">ВОДООТВОД</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="drainage.html">Монтаж водосточных систем</a></h3>
+                            <p class="card-text">Комплексный расчет и установка систем отвода дождевой воды. Правильный
+                                подбор диаметра желобов защищает фасад от брызг, а фундамент — от подмывания грунта.</p>
+                            <a href="drainage.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>110</span> грн/п.м.</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='repair.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/remont.jpg" alt="Ремонт кровли">
+                            <span class="badge-category">СРОЧНО</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="repair.html">Ремонт и устранение протечек</a></h3>
+                            <p class="card-text">Оперативный выезд бригады для ликвидации аварийных ситуаций. Проводим
+                                замену элементов, герметизацию швов и стыков. Гарантируем восстановление герметичности в
+                                кратчайшие сроки.</p>
+                            <a href="repair.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>500</span> грн</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='bitumen-roof.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/bitum.jpg" alt="Битумная черепица">
+                            <span class="badge-category">ПРЕМИУМ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="bitumen-roof.html">Битумная черепица</a></h3>
+                            <p class="card-text">Монтаж мягкой черепицы для крыш сложной формы. Бесшумное покрытие с
+                                отличным эстетическим видом. Включает подготовку основания из OSB-плит и монтаж
+                                подкладочного ковра.</p>
+                            <a href="bitumen-roof.html" class="btn-more">Подробнее <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>250</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='insulation.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/utepl.jpg" alt="Утепление крыши">
+                            <span class="badge-category">ЭНЕРГОЭФФЕКТИВНОСТЬ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="insulation.html">Утепление крыши и чердака</a></h3>
+                            <p class="card-text">Профессиональная теплоизоляция минеральной ватой. Качественное
+                                утепление позволяет экономить до 40% на отоплении зимой и сохраняет прохладу в помещении
+                                летом.</p>
+                            <a href="insulation.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>120</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='inspection.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/rewiev.jpg" alt="Осмотр крыши">
+                            <span class="badge-category">ЭКСПЕРТИЗА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="inspection.html">Профессиональный осмотр крыши</a></h3>
+                            <p class="card-text">Комплексная проверка состояния покрытия и стропильной системы. Мы
+                                находим скрытые дефекты и предоставляем детальный отчет для предотвращения крупных
+                                затрат в будущем.</p>
+                            <a href="inspection.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>200</span> грн</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card" onclick="location.href='solar-ready.html';">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/sun.jpg" alt="Солнечные панели">
+                            <span class="badge-category">ЭНЕРГОНЕЗАВИСИМОСТЬ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title"><a href="solar-ready.html">Подготовка крыши к солнечным панелям</a>
+                            </h3>
+                            <p class="card-text">Специальная услуга по проверке и усилению кровли перед установкой СЭС.
+                                Мы монтируем герметичные закладные элементы и крепления, чтобы установка панелей не
+                                привела к повреждению гидроизоляции и протечкам крыши в будущем.</p>
+                            <a href="solar-ready.html" class="btn-more">Подробнее <i class="fas fa-arrow-right"></i></a>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>150</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order" onclick="event.stopPropagation();">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/balcony.jpg" alt="Ремонт кровли балкона">
+                            <span class="badge-category">БАЛКОНЫ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Ремонт кровли балкона (козырька)</h3>
+                            <p class="card-text">Профессиональное восстановление гидроизоляции балконных крыш, особенно
+                                на последних этажах. Мы устраняем протечки, проводим герметизацию примыканий к стене и
+                                используем качественный еврорубероид с защитной гранитной посыпкой, что надежно защитит
+                                вашу квартиру от влаги и грибка.</p>
+
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>1500</span> грн/ед.</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/garage.jpg" alt="Ремонт крыши гаража">
+                            <span class="badge-category">ГАРАЖИ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Ремонт крыши гаража</h3>
+                            <p class="card-text">Комплексное восстановление герметичности гаражной кровли. Очистка,
+                                ремонт трещин в основании и наплавление нового слоя рубероида под горелку. Защита авто
+                                от осадков и коррозии.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>140</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/onduline.jpg" alt="Кровля из ондулина">
+                            <span class="badge-category">ЕВРОШИФЕР</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Кровля из ондулина (Еврошифер)</h3>
+                            <p class="card-text">Монтаж легкого, бесшумного и экологичного покрытия Onduline. Это
+                                идеальный вариант для частных домов и хозпостроек, так как материал не ржавеет, не шумит
+                                при дожде и очень быстро монтируется. Предоставляем гарантию на герметичность от
+                                производителя.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>180</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/foundation.jpg" alt="Гидроизоляция фундамента">
+                            <span class="badge-category">ЗАЩИТА ОСНОВАНИЯ</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Гидроизоляция фундамента</h3>
+                            <p class="card-text">Надежная защита подземной части здания от грунтовых вод и влаги. Мы
+                                выполняем профессиональную вертикальную и горизонтальную гидроизоляцию наплавляемыми
+                                материалами или мастиками, что гарантирует сухие подвалы и прочность всего дома на
+                                десятилетия.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>160</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/screed.jpg" alt="Стяжка на кровле">
+                            <span class="badge-category">ПОДГОТОВКА</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Устройство стяжки на кровле</h3>
+                            <p class="card-text">Создание прочного основания и правильной разуклонки для эффективного
+                                отвода дождевой воды. Мы выполняем цементно-песчаную стяжку с армированием под
+                                наплавляемую кровлю или ПВХ-мембрану, что исключает появление застойных зон и луж на
+                                крыше.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>180</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-new-card">
+                        <div class="card-image-part">
+                            <img src="../source/images/services/new-roof.jpg" alt="Строительство крыши с нуля">
+                            <span class="badge-category">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО</span>
+                        </div>
+                        <div class="card-content-part">
+                            <h3 class="card-title">Строительство крыши «под ключ»</h3>
+                            <p class="card-text">Полный комплекс работ по возведению кровли с нуля: от монтажа
+                                стропильной системы и утепления до укладки финишного покрытия и установки водостоков. Мы
+                                берем на себя все этапы строительства, гарантируя надежность конструкции и соблюдение
+                                норм.</p>
+                            <div class="card-footer-action">
+                                <div class="card-price">от <span>450</span> грн/м²</div>
+                                <a href="#contacts" class="btn-order">ЗАКАЗАТЬ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contact-section contact-bg-overlay py-5" id="contacts">
+        <div class="container py-lg-5">
+            <div class="contact-wrapper shadow-lg">
+                <div class="row g-0">
+
+                    <div class="col-lg-7 bg-white p-4 p-md-5">
+                        <div class="contact-header mb-4">
+                            <h2 class="fw-black text-dark mb-2" style="font-size: 2rem; letter-spacing: -1px;">
+                                Нужен расчет <span class="text-green">ремонта?</span>
+                            </h2>
+                            <p class="text-muted small">
+                                Заполните форму, и наш мастер свяжется с вами для <span
+                                    class="text-dark fw-bold">бесплатной оценки</span> объекта в Днепре.
+                            </p>
+                        </div>
+
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-muted">Ваше имя</label>
+                                    <input type="text" class="form-control custom-input" placeholder="Иван" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold text-muted">Телефон</label>
+                                    <input type="tel" class="form-control custom-input"
+                                        placeholder="+38 (0XX) XXX-XX-XX" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold text-muted">Адрес или тип объекта</label>
+                                    <input type="text" class="form-control custom-input"
+                                        placeholder="Днепр, ул. Космическая / Гараж (необязательно)">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold text-muted">Описание проблемы</label>
+                                    <textarea class="form-control custom-input" rows="3"
+                                        placeholder="Какая проблема или что нужно сделать? (необязательно)"></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-green-action w-100 py-3">
+                                        <i class="fas fa-calculator me-2"></i> Получить консультацию
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div
+                        class="col-lg-5 dark-bg-contacts p-4 p-md-5 text-white d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="mb-4 fw-black">Наши контакты</h3>
+                            <div class="contact-info-list">
+                                <div class="d-flex mb-4">
+                                    <div class="contact-icon-circle me-3">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0 small opacity-50">Телефоны:</p>
+                                        <p class="fw-bold mb-0">+38 (067) 123-45-67 <span
+                                                class="badge bg-green-soft ms-2">Киевстар</span>
+                                        </p>
+                                        <p class="fw-bold mb-0">+38 (050) 123-45-67 <span
+                                                class="badge bg-green-soft ms-2">Vodafone</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-4">
+                                    <div class="contact-icon-circle me-3">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <p class="mb-0 small opacity-50">Режим работы:</p>
+                                        <p class="fw-bold mb-0">Пн-Сб: 08:00 — 19:00</p>
+                                        <p class="small text-green mb-0">Вс: Выезд по договоренности</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-container shadow-sm">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d169145.4248566164!2d34.860273752535084!3d48.46194482088636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303d2846103%3A0x684983054044a3ba!2z0JTQvdC40L_RgNC-LCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1715851234567!5m2!1sru!2sua"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-bg pt-5 pb-3">
+        <div class="container py-4">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand mb-3">
+                        <span class="brand-name text-white">Кровля Днепр</span>
+                        <span class="brand-sub text-green d-block">Днепр • Качество</span>
+                    </div>
+                    <p class="text-white-50 small mb-4">
+                        Профессиональные кровельные решения в городе Днепр и области. Работаем более 15 лет. Гарантируем
+                        качество и надежность любой крыши.
+                    </p>
+                    <div class="footer-socials d-flex gap-3">
+                        <a href="https://www.instagram.com/krovlia_dnipro/" class="social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@krovlia_dnipro" class="social-link"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://t.me/krovlia_dnipro" class="social-link"><i
+                                class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title text-white mb-4">Услуги</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="soft-roof.html">Мягкая кровля</a></li>
+                        <li><a href="hard-roof.html">Жесткая кровля</a></li>
+                        <li><a href="repair.html">Ремонт крыши</a></li>
+                        <li><a href="drainage.html">Водосточные системы</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title text-white mb-4">Компания</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="services.html">Все услуги</a></li>
+                        <li><a href="stati.html">База знаний</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title text-white mb-4">Свяжитесь с нами</h5>
+                    <div class="footer-contact-item d-flex mb-3">
+                        <i class="fas fa-map-marker-alt text-green me-3 mt-1"></i>
+                        <span class="text-white-50 small">г. Днепр (выезжаем в область до 50 км)</span>
+                    </div>
+                    <div class="footer-contact-item d-flex mb-3">
+                        <i class="fas fa-phone-alt text-green me-3 mt-1"></i>
+                        <a href="tel:+380671234567" class="text-white text-decoration-none fw-bold">+38 (067)
+                            123-45-67</a>
+                    </div>
+                    <div class="footer-contact-item d-flex mb-3">
+                        <i class="fas fa-envelope text-green me-3 mt-1"></i>
+                        <a href="mailto:jkrovliaua@gmail.com"
+                            class="text-white-50 text-decoration-none">jkrovliaua@gmail.com</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider my-5">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50 small">
+                        © 2025 Krovlia Dnipro. Все права защищены.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+380671234567" class="floating-phone-btn" title="Позвонить нам">
+        <div class="pulse-ring"></div>
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="contacts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
